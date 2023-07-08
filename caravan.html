@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tablero de Dragones y Mazmorras</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      background-color: #211f1f;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .board-bg {
+      background-color: #2b2727;
+    }
+
+    .board-container {
+      width: 80vw;
+      aspect-ratio: 40 / 20;
+      border: 1px solid #000;
+      overflow: hidden;
+    }
+
+    .board {
+      display: grid;
+      grid-template-columns: repeat(40, 1fr);
+      grid-template-rows: repeat(20, 1fr);
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .cell {
+      box-sizing: border-box;
+      border: 1px solid #000;
+      padding: 5px;
+      position: relative;
+    }
+
+    .user {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 110%;
+    }
+
+    .monster {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 140%;
+    }
+
+    .button-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-family: 'Arial', sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: #8b281c;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #d27963;
+    }
+
+    .button-reset {
+      background-color: #8e8e8e;
+      color: #fff;
+    }
+
+    .button-back {
+      background-color: #555555;
+      color: #fff;
+      margin-top: 10px;
+    }
+
+    .button-back:hover {
+      background-color: #777777;
+    }
+  </style>
+  <script>
+    var addingUser = true;
+
+    function createBoard() {
+      var board = document.getElementById('board');
+      board.innerHTML = ''; // Reinicia el tablero
+
+      board.style.backgroundImage = "url('img/caravana.jpg')";
+
+      for (var i = 0; i < 20; i++) {
+        for (var j = 0; j < 40; j++) {
+          var cell = document.createElement('div');
+          cell.className = 'cell';
+          cell.setAttribute('onclick', 'toggleCharacter(this)');
+          board.appendChild(cell);
+        }
+      }
+    }
+
+    function toggleCharacter(cell) {
+      if (addingUser) {
+        toggleUser(cell);
+      } else {
+        toggleMonster(cell);
+      }
+    }
+
+    function toggleUser(cell) {
+      if (cell.hasChildNodes()) {
+        // Usuario presente, borrarlo
+        var user = cell.firstChild;
+        user.remove();
+      } else {
+        // Añadir usuario
+        var user = document.createElement('img');
+        user.className = 'user';
+        user.src = 'img/user.png';
+        user.alt = 'User';
+
+        cell.appendChild(user);
+      }
+    }
+
+    function toggleMonster(cell) {
+      if (cell.hasChildNodes()) {
+        // Monstruo presente, borrarlo
+        var monster = cell.firstChild;
+        monster.remove();
+      } else {
+        // Añadir monstruo
+        var monster = document.createElement('img');
+        monster.className = 'monster';
+        monster.src = 'img/monster.png';
+        monster.alt = 'Monster';
+
+        cell.appendChild(monster);
+      }
+    }
+
+    function toggleAddUser() {
+      addingUser = true;
+    }
+
+    function toggleAddMonster() {
+      addingUser = false;
+    }
+
+    function resetBoard() {
+      var board = document.getElementById('board');
+      board.innerHTML = '';
+      createBoard();
+    }
+  </script>
+</head>
+<body class="board-bg">
+  <div class="container">
+    <div class="board-container">
+      <div id="board" class="board"></div>
+    </div>
+
+    <div class="button-container">
+      <button class="button button-reset" onclick="resetBoard()">Resetear</button>
+      <button class="button" onclick="toggleAddUser()">Añadir Usuario</button>
+      <button class="button" onclick="toggleAddMonster()">Añadir Monstruo</button>
+    </div>
+
+    <button class="button button-back" onclick="goBack()">Volver Atrás</button>
+  </div>
+
+  <script>
+    createBoard();
+
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>
