@@ -18,125 +18,159 @@
 
     /* --------------------------------
     xNavigation
-    -------------------------------- */
-    /* Agrega aquí tus estilos de navegación si los tienes */
+      -------------------------------- */
+      /* Agrega aquí tus estilos de navegación si los tienes */
 
-    /* --------------------------------
-    xTypography
-    -------------------------------- */
-    /* Agrega aquí tus estilos de tipografía */
+      /* --------------------------------
+      xTypography
+      -------------------------------- */
+      /* Agrega aquí tus estilos de tipografía */
+      .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8b281c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: -1px -1px 0px #000, 1px 1px 0px #000;
+}
 
-    body {
-      background-color: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      color: #fff;
-      font-family: 'Arial', sans-serif;
-    }
+.button:hover {
+  background-color: #ff4d6d;
+}
 
-    h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-      font-family: "Nodesto", serif;
-      color: #ff4d6d;
-      letter-spacing: .025em;
-      text-shadow: -2px -2px 0px #8b281c, 2px 2px 0px #8b281c, -2px 2px 0px #8b281c, 2px -2px 0px #8b281c, -2px -1px 0px #8b281c, 2px 1px 0px #8b281c, -2px 1px 0px #8b281c, 2px -1px 0px #8b281c, -2px 0px 0px #8b281c, 2px 0px 0px #8b281c, -1px -2px 0px #8b281c, 1px 2px 0px #8b281c, -1px 2px 0px #8b281c, 1px -2px 0px #8b281c, -1px -1px 0px #8b281c, 1px 1px 0px #8b281c;
-      text-transform: uppercase;
-      line-height: 1.2;
-      margin: 0 0 .4em;
-      text-align: center;
-    }
+.button:active {
+  background-color: #5e1a25;
+}
+      body {
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #fff;
+        font-family: 'Arial', sans-serif;
+      }
 
-    button {
-      padding: 10px 20px;
-      margin-bottom: 10px;
-      border: none;
-      border-radius: 4px;
-      font-family: 'Arial', sans-serif;
-      font-size: 18px;
-      cursor: pointer;
-      background-color: #8b281c;
-      color: #fff;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-      text-shadow: -1px -1px 0px #000, 1px 1px 0px #000;
-    }
+      h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        font-family: "Nodesto", serif;
+        color: #ff4d6d;
+        letter-spacing: .025em;
+        text-shadow: -2px -2px 0px #8b281c, 2px 2px 0px #8b281c, -2px 2px 0px #8b281c, 2px -2px 0px #8b281c, -2px -1px 0px #8b281c, 2px 1px 0px #8b281c, -2px 1px 0px #8b281c, 2px -1px 0px #8b281c, -2px 0px 0px #8b281c, 2px 0px 0px #8b281c, -1px -2px 0px #8b281c, 1px 2px 0px #8b281c, -1px 2px 0px #8b281c, 1px -2px 0px #8b281c, -1px -1px 0px #8b281c, 1px 1px 0px #8b281c;
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin: 0 0 .4em;
+        text-align: center;
+      }
 
-    button:hover {
-      background-color: #ff4d6d;
-    }
+      button {
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 4px;
+        font-family: 'Arial', sans-serif;
+        font-size: 18px;
+        cursor: pointer;
+        background-color: #8b281c;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        text-shadow: -1px -1px 0px #000, 1px 1px 0px #000;
+      }
 
-    button:active {
-      background-color: #5e1a25;
-    }
+      button:hover {
+        background-color: #ff4d6d;
+      }
 
-    h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-      color: #ff4d6d;
-      text-shadow: -1px -1px 0px #000, 1px 1px 0px #000;
-    }
+      button:active {
+        background-color: #5e1a25;
+      }
 
-    p {
-      font-size: 18px;
-      margin-bottom: 10px;
-      color: #fff;
-    }
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #ff4d6d;
+        text-shadow: -1px -1px 0px #000, 1px 1px 0px #000;
+      }
 
-    h3 {
-      font-family: 'Arial', sans-serif;
-      font-size: 18px;
-      margin-bottom: 10px;
-      color: #ff4d6d;
-      text-decoration: underline;
-    }
+      p {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #fff;
+      }
 
-    h3 a {
-      color: #ff4d6d;
-      text-decoration: none;
-    }
+      h3 {
+        font-family: 'Arial', sans-serif;
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #ff4d6d;
+        text-decoration: underline;
+      }
 
-    h3 a:hover {
-      color: #d27963;
-    }
-  </style>
-</head>
-<body>
-  <div>
-    <h1>Bienvenido al generador de tableros</h1>
-    <div class="button-container">
-      <button onclick="redirectToBoard('board_bridge.html')">Puente del Castillo (hielo)</button>
-      <button onclick="redirectToBoard('path_forest.html')">Camino del Bosque</button>
-      <button onclick="redirectToBoard('path_mine.html')">Camino de la Mazmorra</button>
-      <button onclick="redirectToBoard('waterfall.html')">Cascada</button>
-      <button onclick="redirectToBoard('dining_room_mine.html')">Comedor de la Mazmorra</button>
-      <br>  
-      <button onclick="redirectToBoard('treasure_lake_dungeon.html')">Lago Tesoro en la Mazmorra</button>
-      <button onclick="redirectToBoard('lava_stones.html')">Piedras de Lava</button>
-      <button onclick="redirectToBoard('lavawater_stones.html')">Piedras de Lava y Agua</button>
-      <button onclick="redirectToBoard('caravan.html')">Caravana</button>
-      <button onclick="redirectToBoard('fortress.html')">Fortín Derruido</button>
+      h3 a {
+        color: #ff4d6d;
+        text-decoration: none;
+      }
 
-    </div>
+      h3 a:hover {
+        color: #d27963;
+      }
+    </style>
+  </head>
+  <body>
     <div>
-      <h2>¿Cómo funciona el generador de tableros?</h2>
-      <p>Selecciona el mapa en el que quieres jugar.</p>
-      <p>Añade usuarios haciendo clic en la celda (haz clic nuevamente para borrarlos).</p>
-      <p>Añade monstruos haciendo clic en la celda (haz clic nuevamente para borrarlos).</p>
-    </div>
-    <div>
-      <h3>¿Quieres colaborar con mapas o nuevas funcionalidades?</h3>
-      <a href="https://romflorod.github.io" target="_blank">romflorod.github.io</a>
-    </div>
- </div>
+      <h1>Bienvenido al generador de tableros</h1>
+      <div class="button-container">
+        <button onclick="redirectToBoard('board_bridge.html')">Puente del Castillo (hielo)</button>
+        <button onclick="redirectToBoard('path_forest.html')">Camino del Bosque</button>
+        <button onclick="redirectToBoard('path_mine.html')">Camino de la Mazmorra</button>
+        <button onclick="redirectToBoard('waterfall.html')">Cascada</button>
+        <button onclick="redirectToBoard('dining_room_mine.html')">Comedor de la Mazmorra</button>
+        <br>  
+        <button onclick="redirectToBoard('treasure_lake_dungeon.html')">Lago Tesoro en la Mazmorra</button>
+        <button onclick="redirectToBoard('lava_stones.html')">Piedras de Lava</button>
+        <button onclick="redirectToBoard('lavawater_stones.html')">Piedras de Lava y Agua</button>
+        <button onclick="redirectToBoard('caravan.html')">Caravana</button>
+        <button onclick="redirectToBoard('fortress.html')">Fortín Derruido</button>
 
-  <script>
-    function redirectToBoard(path) {
-      window.location.href = path;
-    }
-  </script>
-</body>
+      </div>
+      <div>
+        <h2>¿Cómo funciona el generador de tableros?</h2>
+        <p>Selecciona el mapa en el que quieres jugar.</p>
+        <p>Añade usuarios haciendo clic en la celda (haz clic nuevamente para borrarlos).</p>
+        <p>Añade monstruos haciendo clic en la celda (haz clic nuevamente para borrarlos).</p>
+      </div>
+      <div>
+        <h1>Herramientas de Dados</h1>
+        <div class="button-container">
+          <a href="/dices/challenge.html" target="_blank" class="button">Dados</a>
+        </div>
+        
+    
+      <div>
+        <h3>¿Quieres colaborar con mapas o nuevas funcionalidades?</h3>
+        <a href="https://romflorod.github.io" target="_blank">romflorod.github.io</a>
+      </div>
+  </div>
+
+    <script>
+      function redirectToBoard(path) {
+        window.location.href = path;
+      }
+     
+    </script>
+    <script>
+      function redirectToDiceTools() {
+        window.location.href = "/dices/challenge.html";
+      }
+    </script>
+  </body>
 </html>
