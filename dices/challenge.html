@@ -83,7 +83,11 @@
     <h2>Resultado</h2>
     <div id="result" class="result"></div>
   </div>
-
+  <br>
+  <button class="button button-back" onclick="goBack()">Volver Atrás</button>
+  <script> function goBack() {
+    window.history.back();
+  }</script>
   <script>
     function rollDice(caras) {
       var resultado = Math.floor(Math.random() * caras) + 1;

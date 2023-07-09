@@ -9,57 +9,6 @@
   <style>
     @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css";
     
-    .slideshow-container {
-      position: relative;
-      width: 400px;
-      height: 400px;
-      margin: 0 auto;
-      overflow: hidden;
-    }
-
-    .slide {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      transition: opacity 1s;
-    }
-
-    .slide.active {
-      opacity: 1;
-    }
-
-    .slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .prev, .next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 24px;
-      color: #fff;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 8px;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .prev:hover, .next:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    .prev {
-      left: 10px;
-    }
-
-    .next {
-      right: 10px;
-    }
     body {
       background-color: #1c1c1c;
       color: #ffffff;
@@ -155,7 +104,58 @@
       text-shadow: -2px -2px 0px #030202, 2px 2px 0px #8b1c6a, -2px 2px 0px #0e0a09, 2px -2px 0px #41183a, -2px -1px 0px #8f4689, 2px 1px 0px #b62d9f, -2px 1px 0px #9e2c8f, 2px -1px 0px #8b281c, -2px 0px 0px #8b281c, 2px 0px 0px #8b281c, -1px -2px 0px #8b281c, 1px 2px 0px #8b1c8b, -1px 2px 0px #4b1642, 1px -2px 0px #8e39a3, -1px -1px 0px #6a2a70, 1px 1px 0px #8d2d96;
       line-height: 1.2;
     }
-   
+
+    .slideshow-container {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s;
+    }
+
+    .slide.active {
+      opacity: 1;
+    }
+
+    .slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
   </style>
 </head>
 <body>
@@ -235,14 +235,8 @@
       function redirectToBoard(path) {
         window.location.href = path;
       }
-     
     </script>
     <script>
-      function redirectToDiceTools() {
-        window.location.href = "/dices/challenge.html";
-      }
-    </script>
-     <script>
       const slides = document.querySelectorAll('.slide');
       let currentSlide = 0;
   
@@ -278,5 +272,6 @@
       });
     </script>
     
-  </body>
+  </div>
+</body>
 </html>
