@@ -4,54 +4,56 @@
   <title>Tienda de la Edad Media</title>
   <style>
     body {
-      font-family: "Gothic Medieval", Arial, sans-serif;
+      font-family: 'Gothic', sans-serif;
       background-color: #000;
       color: #fff;
-      padding: 20px;
+      margin: 0;
+      padding: 0;
     }
 
     h1 {
-      font-size: 32px;
-      color: #8b0000;
       text-align: center;
-      margin-bottom: 30px;
-    }
-
-    h2 {
-      font-size: 24px;
-      color: #8b0000;
-      margin-top: 20px;
+      font-size: 32px;
+      padding: 20px;
+      margin: 0;
     }
 
     table {
-      width: 100%;
       border-collapse: collapse;
-      margin-top: 10px;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 800px;
     }
 
-    th, td {
+    th,
+    td {
       padding: 10px;
-      text-align: left;
-      border-bottom: 1px solid #8b0000;
+      text-align: center;
+      border: 1px solid #fff;
     }
 
     th {
-      background-color: #8b0000;
-      color: #fff;
+      background-color: #8b281c;
+      font-weight: bold;
     }
 
-    tr:nth-child(even) {
-      background-color: #333;
+    td:first-child {
+      text-align: left;
     }
 
-    tr:hover {
-      background-color: #555;
+    a {
+      color: #ff4d6d;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #d27963;
     }
   </style>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Uncial+Antiqua&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Bienvenido a la Tienda de la Edad Media</h1>
+  <h1>Tienda de la Edad Media</h1>
 
   <h2>Armaduras</h2>
   <table>
@@ -200,10 +202,187 @@
       </tr>
       <tr>
         <td>Escudo</td>
-        <td1 acción</td>
+        <td>1 acción</td>
         <td>1 acción</td>
       </tr>
     </tbody>
+      </table>
+
+    <h2>Armas</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Daño</th>
+          <th>Peso</th>
+          <th>Propiedades</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bastón</td>
+          <td>2 pp</td>
+          <td>1d6 contundente</td>
+          <td>4 lb</td>
+          <td>Versátil (1d8)</td>
+        </tr>
+        <tr>
+          <td>Clava</td>
+          <td>1 pp</td>
+          <td>1d4 contundente</td>
+          <td>2 lb</td>
+          <td>Ligera</td>
+        </tr>
+        <tr>
+          <td>Daga</td>
+          <td>2 po</td>
+          <td>1d4 perforante</td>
+          <td>1 lb</td>
+          <td>Sutil, ligera, arrojadiza (alcance 20/60)</td>
+        </tr>
+        <tr>
+          <td>Gran clava</td>
+          <td>2 pp</td>
+          <td>1d8 contundente</td>
+          <td>10 lb</td>
+          <td>Dos manos</td>
+        </tr>
+        <tr>
+          <td>Hacha de mano</td>
+          <td>5 po</td>
+          <td>1d6 cortante</td>
+          <td>2 lb</td>
+          <td>Ligera, arrojadiza (alcance 20/60)</td>
+        </tr>
+        <tr>
+          <td>Hoz</td>
+          <td>1 po</td>
+          <td>1d4 cortante</td>
+          <td>2 lb</td>
+          <td>Ligera</td>
+        </tr>
+        <tr>
+          <td>Jabalina</td>
+          <td>5 pp</td>
+          <td>1d6 perforante</td>
+          <td>2 lb</td>
+          <td>Arrojadiza (alcance 30/120)</td>
+        </tr>
+        <tr>
+          <td>Lanza</td>
+          <td>1 po</td>
+          <td>1d6 perforante</td>
+          <td>3 lb</td>
+          <td>Arrojadiza (alcance 20/60), versátil (1d8)</td>
+        </tr>
+        <tr>
+          <td>Martillo ligero</td>
+          <td>2 po</td>
+          <td>1d4 contundente</td>
+          <td>2 lb</td>
+          <td>Ligera, arrojadiza (alcance 20/60)</td>
+        </tr>
+        <tr>
+          <td>Maza</td>
+          <td>5 po</td>
+          <td>1d6 contundente</td>
+          <td>4 lb</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Arco corto</td>
+          <td>25 po</td>
+          <td>1d6 perforante</td>
+          <td>2 lb</td>
+          <td>Munición (alcance 80/320), dos manos</td>
+        </tr>
+        <tr>
+          <td>Ballesta ligera</td>
+          <td>25 po</td>
+          <td>1d8 perforante</td>
+          <td>5 lb</td>
+          <td>Munición (alcance 80/320), de carga, dos manos</td>
+        </tr>
+        <tr>
+          <td>Dardo</td>
+          <td>5 pc</td>
+          <td>1d4 perforante</td>
+          <td>1/4 lb</td>
+          <td>Sutil, arrojadiza (alcance 20/60)</td>
+        </tr>
+        <tr>
+          <td>Honda</td>
+          <td>1 pp</td>
+          <td>1d4 contundente</td>
+          <td>-</td>
+          <td>Munición (alcance 30/120)</td>
+        </tr>
+        <tr>
+          <td>Alabarda</td>
+          <td>20 po</td>
+          <td>1d10 cortante</td>
+          <td>6 lb</td>
+          <td>Pesada, alcance, dos manos</td>
+        </tr>
+        <tr>
+          <td>Cimitarra</td>
+          <td>25 po</td>
+          <td>1d6 cortante</td>
+          <td>3 lb</td>
+          <td>Sutil, ligera</td>
+        </tr>
+        <tr>
+          <td>Espada corta</td>
+          <td>10 po</td>
+          <td>1d6 perforante</td>
+          <td>2 lb</td>
+          <td>Sutil, ligera</td>
+        </tr>
+        <tr>
+          <td>Espada larga</td>
+          <td>15 po</td>
+          <td>1d8 cortante</td>
+          <td>3 lb</td>
+          <td>Versátil (1d10)</td>
+        </tr>
+        <tr>
+          <td>Estoque</td>
+          <td>25 po</td>
+          <td>1d8 perforante</td>
+          <td>2 lb</td>
+          <td>Sutil</td>
+        </tr>
+        <tr>
+          <td>Gran hacha</td>
+          <td>30 po</td>
+          <td>1d12 cortante</td>
+          <td>7 lb</td>
+          <td>Pesada, dos manos</td>
+        </tr>
+        <tr>
+          <td>Guja</td>
+          <td>20 po</td>
+          <td>1d10 cortante</td>
+          <td>6 lb</td>
+          <td>Pesada, alcance, dos manos</td>
+        </tr>
+        <tr>
+          <td>Hacha de batalla</td>
+          <td>10 po</td>
+          <td>1d8 cortante</td>
+          <td>4 lb</td>
+          <td>Versátil (1d10)</td>
+        </tr>
+        <tr>
+          <td>Lanza de caballería</td>
+          <td>10 po</td>
+          <td>1d12 perforante</td>
+          <td>6 lb</td>
+          <td>Alcance, especial</td>
+        </tr>
+        <tr>
+          <td>Lát    </tbody>
   </table>
 
   <h2>Armas</h2>
@@ -377,10 +556,10 @@
         <td>10 po</td>
         <td>1d12 perforante</td>
         <td>6 lb</td>
-        <tdAlcance, especial</td>
+        <td>Alcance, especial</td>
       </tr>
       <tr>
-        <td>Látigo</td>
+               <td>Látigo</td>
         <td>2 po</td>
         <td>1d4 cortante</td>
         <td>3 lb</td>
