@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="keywords" content="armas, dragones y mazmorras, D&D, DND">
+
+  <title>Tienda de Armaduras</title>
+  <style>
+
+.button-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-family: 'Arial', sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: #8b281c;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #d27963;
+    }
+
+    .button-reset {
+      background-color: #8e8e8e;
+      color: #fff;
+    }
+
+    .button-back {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .button-back:hover {
+      background-color: #777777;
+    }
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Gothic', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      text-align: center;
+      padding: 40px;
+      background-color: #8b281c;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .welcome-text {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .explanation-text {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .store-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .armor-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    .armor-table th,
+    .armor-table td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #fff;
+    }
+
+    .armor-table th {
+      background-color: #8b281c;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .armor-table td:first-child {
+      text-align: left;
+    }
+
+    .category-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .category-table th,
+    .category-table td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #fff;
+    }
+
+    .category-table th {
+      background-color: #8b281c;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .category-table td:first-child {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Tienda de Armaduras</h1>
+    <p class="welcome-text">¡Bienvenido aventurero!</p>
+    <p class="explanation-text">Aquí encontrarás una amplia selección de armaduras para tus aventuras en dragones y mazmorras.</p>
+  </div>
+
+  <div class="store-container">
+    <table class="armor-table">
+        <thead>
+          <tr>
+            <th>Armadura</th>
+            <th>Precio</th>
+            <th>Clase de Armadura (CA)</th>
+            <th>Fuerza</th>
+            <th>Sigilo</th>
+            <th>Peso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Acolchada</td>
+            <td>5 po</td>
+            <td>11 + modificador por Destreza</td>
+            <td>-</td>
+            <td>Desventaja</td>
+            <td>8 lb</td>
+          </tr>
+          <tr>
+            <td>Cuero</td>
+            <td>10 po</td>
+            <td>11 + modificador por Destreza</td>
+            <td>-</td>
+            <td>-</td>
+            <td>10 lb</td>
+          </tr>
+          <tr>
+            <td>Cuero tachonado</td>
+            <td>45 po</td>
+            <td>12 + modificador por Destreza</td>
+            <td>-</td>
+            <td>-</td>
+            <td>13 lb</td>
+          </tr>
+          <tr>
+            <td>Pieles</td>
+            <td>10 po</td>
+            <td>12 + modificador por Destreza (máx. 2)</td>
+            <td>-</td>
+            <td>-</td>
+            <td>12 lb</td>
+          </tr>
+          <tr>
+            <td>Camisote de malla</td>
+            <td>50 po</td>
+            <td>13 + modificador por Destreza (máx. 2)</td>
+            <td>-</td>
+            <td>-</td>
+            <td>20 lb</td>
+          </tr>
+          <tr>
+            <td>Cota de escamas</td>
+            <td>50 po</td>
+            <td>14 + modificador por Destreza (máx. 2)</td>
+            <td>-</td>
+            <td>Desventaja</td>
+            <td>45 lb</td>
+          </tr>
+          <tr>
+            <td>Coraza</td>
+            <td>400 po</td>
+            <td>14 + modificador por Destreza (máx. 2)</td>
+            <td>-</td>
+            <td>-</td>
+            <td>20 lb</td>
+          </tr>
+          <tr>
+            <td>Armadura de placas y mallas</td>
+            <td>750 po</td>
+            <td>15 + modificador por Destreza (máx. 2)</td>
+            <td>-</td>
+            <td>Desventaja</td>
+            <td>40 lb</td>
+          </tr>
+          <tr>
+            <td>Armadura de anillas</td>
+            <td>30 po</td>
+            <td>14</td>
+            <td>-</td>
+            <td>Desventaja</td>
+            <td>40 lb</td>
+          </tr>
+          <tr>
+            <td>Cota de malla</td>
+            <td>75 po</td>
+            <td>16</td>
+            <td>Fue 13</td>
+            <td>Desventaja</td>
+            <td>55 lb</td>
+          </tr>
+          <tr>
+            <td>Armadura laminada</td>
+            <td>200 po</td>
+            <td>17</td>
+            <td>Fue 15</td>
+            <td>Desventaja</td>
+            <td>60 lb</td>
+          </tr>
+          <tr>
+            <td>Armadura de placas</td>
+            <td>1500 po</td>
+            <td>18</td>
+            <td>Fue 15</td>
+            <td>Desventaja</td>
+            <td>65 lb</td>
+          </tr>
+          <tr>
+            <td>Escudo</td>
+            <td>10 po</td>
+            <td>+2</td>
+            <td>-</td>
+            <td>-</td>
+            <td>6 lb</td>
+          </tr>
+        </tbody>
+      </table>
+
+    <table class="category-table">
+      <tr>
+        <th>Categoría</th>
+        <th>Ponérsela</th>
+        <th>Quitársela</th>
+      </tr>
+      <tr>
+        <td>Armadura ligera</td>
+        <td>1 minuto</td>
+        <td>1 minuto</td>
+      </tr>
+      <tr>
+        <td>Armadura intermedia</td>
+        <td>5 minutos</td>
+        <td>1 minuto</td>
+      </tr>
+      <tr>
+        <td>Armadura pesada</td>
+        <td>10 minutos</td>
+        <td>5 minutos</td>
+      </tr>
+      <tr>
+        <td>Escudo</td>
+        <td>1 acción</td>
+        <td>1 acción</td>
+      </tr>
+    </table>
+
+    <img src="img/armor.jpg" alt="Tienda de Armaduras" style="max-width: 100%; margin-top: 20px;">
+  </div>
+  <br>
+  <button class="button button-back" onclick="goBack()">Volver Atrás</button>
+  <script> function goBack() {
+    window.history.back();
+  }</script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="keywords" content="Herramientas, dragones y mazmorras, D&D, DND">
+  <title>Tienda de Objetos y Comercio</title>
+  <style>
+    .button-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-family: 'Arial', sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: #8b281c;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #d27963;
+    }
+
+    .button-reset {
+      background-color: #8e8e8e;
+      color: #fff;
+    }
+
+    .button-back {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .button-back:hover {
+      background-color: #777777;
+    }
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Gothic', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      text-align: center;
+      padding: 40px;
+      background-color: #8b281c;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .welcome-text {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .explanation-text {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .store-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .armor-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    .armor-table th,
+    .armor-table td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #fff;
+    }
+
+    .armor-table th {
+      background-color: #8b281c;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .armor-table td:first-child {
+      text-align: left;
+    }
+
+    .category-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .category-table th,
+    .category-table td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #fff;
+    }
+
+    .category-table th {
+      background-color: #8b281c;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .category-table td:first-child {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Tienda de Herramientas de Aventuras</h1>
+    <p class="welcome-text">¡Bienvenido aventurero!</p>
+    <p class="explanation-text">Aquí encontrarás una amplia selección de herramientas para tus aventuras en dragones y mazmorras.</p>
+  </div>
+
+  <div class="store-container">
+    <table class="armor-table">
+        <thead>
+          <tr>
+            <th>Precio</th>
+            <th>Productos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 pc</td>
+            <td>1 lb de trigo</td>
+          </tr>
+          <tr>
+            <td>2 pc</td>
+            <td>1 lb de harina o 1 pollo</td>
+          </tr>
+          <tr>
+            <td>5 pc</td>
+            <td>1 lb de sal</td>
+          </tr>
+          <tr>
+            <td>1 ps</td>
+            <td>1 lb de hierro o 1 yarda cuadrada de lona</td>
+          </tr>
+          <tr>
+            <td>5 ps</td>
+            <td>1 lb de cobre o 1 yarda cuadrada de tela de algodón</td>
+          </tr>
+          <tr>
+            <td>1 po</td>
+            <td>1 lb de jengibre o 1 cabra</td>
+          </tr>
+          <tr>
+            <td>2 po</td>
+            <td>1 lb de canela o pimiento, o 1 oveja</td>
+          </tr>
+          <tr>
+            <td>3 po</td>
+            <td>1 lb de clavo no 1 cerdo</td>
+          </tr>
+          <tr>
+            <td>5 po</td>
+            <td>1 lb de plata o 1 yarda cuadrada de lino</td>
+          </tr>
+          <tr>
+            <td>10 po</td>
+            <td>1 yarda cuadrada de seda o 1 vaca</td>
+          </tr>
+          <tr>
+            <td>15 po</td>
+            <td>1 lb de azafrán o 1 buey</td>
+          </tr>
+          <tr>
+            <td>50 po</td>
+            <td>1 lb de oro</td>
+          </tr>
+          <tr>
+            <td>500 po</td>
+            <td>1 lb de platino</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <br>
+      <img src="img/objects.jpg" alt="Tienda de Objetos" style="max-width: 100%; margin-top: 20px;">
+
+      <br>
+      <br>
+      <button class="button button-back" onclick="goBack()">Volver Atrás</button>
+      <script> function goBack() {
+        window.history.back();
+      }</script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="keywords" content="equipo, dragones y mazmorras, D&D, DND">
+  <title>Tienda de Equipos de Aventuras</title>
+  <style>
+    .button-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-family: 'Arial', sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: #8b281c;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #d27963;
+    }
+
+    .button-reset {
+      background-color: #8e8e8e;
+      color: #fff;
+    }
+
+    .button-back {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .button-back:hover {
+      background-color: #777777;
+    }
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Gothic', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      text-align: center;
+      padding: 40px;
+      background-color: #8b281c;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .welcome-text {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .explanation-text {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .store-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .armor-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    .armor-table th,
+    .armor-table td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #fff;
+    }
+
+    .armor-table th {
+      background-color: #8b281c;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .armor-table td:first-child {
+      text-align: left;
+    }
+
+    .category-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .category-table th,
+    .category-table td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #fff;
+    }
+
+    .category-table th {
+      background-color: #8b281c;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .category-table td:first-child {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Tienda de Equipos de Aventuras</h1>
+    <p class="welcome-text">¡Bienvenido aventurero!</p>
+    <p class="explanation-text">Aquí encontrarás una amplia selección de equipos para tus aventuras en dragones y mazmorras.</p>
+  </div>
+
+  <div class="store-container">
+    <table class="armor-table">
+        <thead>
+          <tr>
+            <th>Objeto</th>
+            <th>Coste</th>
+            <th>Peso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ábaco</td>
+            <td>2 po</td>
+            <td>2 lb</td>
+          </tr>
+          <tr>
+            <td>Abrojos (bolsa de 20)</td>
+            <td>1 po</td>
+            <td>2 lb</td>
+          </tr>
+          <tr>
+            <td>Aceite (frasco)</td>
+            <td>1 pp</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Ácido (vial)</td>
+            <td>25 po</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Agua bendita (frasco)</td>
+            <td>25 po</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Aljaba</td>
+            <td>1 po</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Anillo de sello</td>
+            <td>5 po</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Antitoxina (vial)</td>
+            <td>50 po</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Antorcha</td>
+            <td>1 pc</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Aparejo de pesca</td>
+            <td>1 po</td>
+            <td>4 lb</td>
+          </tr>
+          <tr>
+            <td>Aparejo de poleas</td>
+            <td>1 po</td>
+            <td>5 lb</td>
+          </tr>
+          <tr>
+            <td>Ariete portátil</td>
+            <td>4 po</td>
+            <td>35 lb</td>
+          </tr>
+          <tr>
+            <td>Balanza de mercader</td>
+            <td>5 po</td>
+            <td>3 lb</td>
+          </tr>
+          <tr>
+            <td>Barril</td>
+            <td>2 po</td>
+            <td>70 lb</td>
+          </tr>
+          <tr>
+            <td>Bolas de metal (bolsa de 1000)</td>
+            <td>1 po</td>
+            <td>2 lb</td>
+          </tr>
+          <tr>
+            <td>Bolsa</td>
+            <td>5 pp</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Bolsa de componentes</td>
+            <td>25 po</td>
+            <td>2 lb</td>
+          </tr>
+          <tr>
+            <td>Botella de cristal</td>
+            <td>2 po</td>
+            <td>2 lb</td>
+          </tr>
+          <tr>
+            <td>Cadena (10 pies)</td>
+            <td>5 po</td>
+            <td>10 lb</td>
+          </tr>
+          <tr>
+            <td>Campana</td>
+            <td>1 po</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Catalejo</td>
+            <td>1000 po</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Cerradura</td>
+            <td>10 po</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Cesto</td>
+            <td>4 pp</td>
+            <td>2 lb</td>
+          </tr>
+          <tr>
+            <td>Cofre</td>
+            <td>5 po</td>
+            <td>25 lb</td>
+          </tr>
+          <tr>
+            <td>Cubo</td>
+            <td>5 pc</td>
+            <td>2 lb</td>
+          </tr>
+          <tr>
+            <td>Cuerda de cáñamo (50 pies)</td>
+            <td>1 po</td>
+            <td>10 lb</td>
+          </tr>
+          <tr>
+            <td>Cuerda de seda (50 pies)</td>
+            <td>10 po</td>
+            <td>5 lb</td>
+          </tr>
+          <tr>
+            <td>Escalera (10 pies)</td>
+            <td>1 pp</td>
+            <td>25 lb</td>
+          </tr>
+          <tr>
+            <td>Espejo de acero</td>
+            <td>5 po</td>
+            <td>1/2 lb</td>
+          </tr>
+          <tr>
+            <td>Esposas</td>
+            <td>2 po</td>
+            <td>6 lb</td>
+          </tr>
+          <tr>
+            <td>Estuche para mapas o pergaminos</td>
+            <td>1 po</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Estuche para virotes de ballesta</td>
+            <td>1 po</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Fiambrera</td>
+            <td>2 pp</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td><strong><span style="color: red;">Foco arcano</span></strong></td>
+          
+          </tr>
+          <tr>
+            <td>Bastón</td>
+            <td>5 po</td>
+            <td>4 lb</td>
+          </tr>
+          <tr>
+            <td>Cetro</td>
+            <td>10 po</td>
+            <td>2 lb</td>
+          </tr>
+          <tr>
+            <td>Cristal</td>
+            <td>10 po</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Orbe</td>
+            <td>20 po</td>
+            <td>3 lb</td>
+          </tr>
+          <tr>
+            <td>Varita</td>
+            <td>10 po</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td><strong><span style="color: red;">Foco druídico</span></strong></td>
+            
+          </tr>
+          <tr>
+            <td>Bastón de madera</td>
+            <td>5 po</td>
+            <td>4 lb</td>
+          </tr>
+          <tr>
+            <td>Ramo de muérdago</td>
+            <td>1 po</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Tótem</td>
+            <td>1 po</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Varita de tejo</td>
+            <td>10 po</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Frasco o jarra de metal</td>
+            <td>2 pc</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Fuego de alquimista (frasco)</td>
+            <td>50 po</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Garfio de escalada</td>
+            <td>2 po</td>
+            <td>4 lb</td>
+          </tr>
+          <tr>
+            <td>Jabón</td>
+            <td>2 pc</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Jarro o jarra</td>
+            <td>2 pc</td>
+            <td>4 lb</td>
+          </tr>
+          <tr>
+            <td>Kit de escalada</td>
+            <td>25 po</td>
+            <td>12 lb</td>
+          </tr>
+          <tr>
+            <td>Kit de sanador</td>
+            <td>2 po</td>
+            <td>3 lb</td>
+          </tr>
+          <tr>
+            <td>Lacre</td>
+            <td>5 pp</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Lámpara</td>
+            <td>5 pp</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Lata de yesca</td>
+            <td>5 pp</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Lente de aumento</td>
+            <td>100 po</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Libro</td>
+            <td>25 po</td>
+            <td>5 lb</td>
+          </tr>
+          <tr>
+            <td>Libro de conjuros</td>
+            <td>50 po</td>
+            <td>3 lb</td>
+          </tr>
+          <tr>
+            <td>Linterna con capuchón</td>
+            <td>5 po</td>
+            <td>2 lb</td>
+          </tr>
+          <tr>
+            <td>Linterna de ojo de buey</td>
+            <td>10 po</td>
+            <td>2 lb</td>
+          </tr>
+          <tr>
+            <td>Manta</td>
+            <td>5 pp</td>
+            <td>3 lb</td>
+          </tr>
+          <tr>
+            <td>Martillo</td>
+            <td>1 po</td>
+            <td>3 lb</td>
+          </tr>
+          <tr>
+            <td>Mazo</td>
+            <td>2 po</td>
+            <td>10 lb</td>
+          </tr>
+          <tr>
+            <td>Mochila</td>
+            <td>2 po</td>
+            <td>5 lb</td>
+          </tr>
+          <tr>
+            <td><strong><span style="color: red;">Munición</span></strong></td>
+       
+          </tr>
+          <tr>
+            <td>Agujas de cerbatanas (50)</td>
+            <td>1 po</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Balas para honda (20)</td>
+            <td>4 pc</td>
+            <td>1 1/2 lb</td>
+          </tr>
+          <tr>
+            <td>Flechas (20)</td>
+            <td>1 po</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Virotes de ballesta (20)</td>
+            <td>1 po</td>
+            <td>1 1/2 lb</td>
+          </tr>
+          <tr>
+            <td>Odre</td>
+            <td>2 pp</td>
+            <td>5 lb (lleno)</td>
+          </tr>
+          <tr>
+            <td>Olla de hierro</td>
+            <td>2 pc</td>
+            <td>10 lb</td>
+          </tr>
+          <tr>
+            <td>Pala</td>
+            <td>2 po</td>
+            <td>5 lb</td>
+          </tr>
+          <tr>
+            <td>Palanca</td>
+            <td>2 po</td>
+            <td>5 lb</td>
+          </tr>
+          <tr>
+            <td>Papel (una hoja)</td>
+            <td>2 pp</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Perfume (vial)</td>
+            <td>5 po</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Pergamino (una hoja)</td>
+            <td>1 pp</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Pértiga (10 pies)</td>
+            <td>5 pc</td>
+            <td>7 lb</td>
+          </tr>
+          <tr>
+            <td>Pico de minero</td>
+            <td>2 po</td>
+            <td>10 lb</td>
+          </tr>
+          <tr>
+            <td>Piedra de afilar</td>
+            <td>1 pc</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Piquetas de hierro (10)</td>
+            <td>1 po</td>
+            <td>5 lb</td>
+          </tr>
+          <tr>
+            <td>Pitón</td>
+            <td>5 pc</td>
+            <td>1/4 lb</td>
+          </tr>
+          <tr>
+            <td>Pluma de escritura</td>
+            <td>2 pc</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Poción de curación</td>
+            <td>50 po</td>
+            <td>1/2 lb</td>
+          </tr>
+          <tr>
+            <td>Raciones (1 día)</td>
+            <td>5 pp</td>
+            <td>2 lb</td>
+          </tr>
+          <tr>
+            <td>Reloj de arena</td>
+            <td>25 po</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Ropa común</td>
+            <td>5 pp</td>
+            <td>3 lb</td>
+          </tr>
+          <tr>
+            <td>Ropa de disfraz</td>
+            <td>5 po</td>
+            <td>4 lb</td>
+          </tr>
+          <tr>
+            <td>Ropa de viajero</td>
+            <td>2 po</td>
+            <td>4 lb</td>
+          </tr>
+          <tr>
+            <td>Ropa fina</td>
+            <td>5 po</td>
+            <td>6 lb</td>
+          </tr>
+          <tr>
+            <td>Saco</td>
+            <td>1 pc</td>
+            <td>1/2 lb</td>
+          </tr>
+          <tr>
+            <td>Saco de dormir</td>
+            <td>1 po</td>
+            <td>7 lb</td>
+          </tr>
+          <tr>
+            <td>Silbato de señales</td>
+            <td>5 pc</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td><strong><span style="color: red;">Símbolo sagrado</span></strong></td>
+            
+          </tr>
+          <tr>
+            <td>Amuleto</td>
+            <td>5 po</td>
+            <td>1 lb</td>
+          </tr>
+          <tr>
+            <td>Emblema</td>
+            <td>5 po</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Relicario</td>
+            <td>5 po</td>
+            <td>2 lb</td>
+          </tr>
+          <tr>
+            <td>Tienda de campaña para dos personas</td>
+            <td>2 po</td>
+            <td>Lb</td>
+          </tr>
+          <tr>
+            <td>Tinta (botella de 1 onza)</td>
+            <td>10 po</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Tiza (1 trozo)</td>
+            <td>1 pc</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Trampa de cazador</td>
+            <td>5 po</td>
+            <td>25 lb</td>
+          </tr>
+          <tr>
+            <td>Túnica</td>
+            <td>1 po</td>
+            <td>4 lb</td>
+          </tr>
+          <tr>
+            <td>Vela</td>
+            <td>1 pc</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Veneno básico (vial)</td>
+            <td>100 po</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Vial</td>
+            <td>1 po</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="armor-table">
+        <thead>
+          <tr>
+            <th>Pack</th>
+            <th>Descripción</th>
+            <th>Coste</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pack de artista</td>
+            <td>Incluye una mochila, un saco de dormir, 2 disfraces, 5 velas, raciones para 5 días, un odre y un kit de disfraz.</td>
+            <td>40 po</td>
+          </tr>
+          <tr>
+            <td>Pack de aventurero</td>
+            <td>Incluye una mochila, una palanca, un martillo, 10 pitones, 10 antorchas, una lata de yesca, raciones para 10 días y un odre. La mochila lleva una cuerda de cáñamo de 50 pies enrollada y colgada en el lateral.</td>
+            <td>12 po</td>
+          </tr>
+          <tr>
+            <td>Pack de diplomático</td>
+            <td>Incluye un cofre, 2 estuches de mapas y pergaminos, un conjunto de ropas finas, una botella de tinta, una pluma de escritura, una lámpara, 2 frascos de aceite, 5 hojas de papel, un vial de perfume, lacre y jabón.</td>
+            <td>39 po</td>
+          </tr>
+          <tr>
+            <td>Pack de erudito</td>
+            <td>Incluye una mochila, un libro de conocimientos, una botella de tinta, una pluma de escritura, 10 hojas de pergamino, un saquito de arena y un cuchillo pequeño.</td>
+            <td>40 po</td>
+          </tr>
+          <tr>
+            <td>Pack de explorador</td>
+            <td>Incluye una mochila, un saco de dormir, una fiambrera, una lata de yesca, 10 antorchas, raciones para 10 días y un odre. La mochila lleva una cuerda de cáñamo de 50 pies enrollada y colgada en el lateral.</td>
+            <td>10 po</td>
+          </tr>
+          <tr>
+            <td>Pack de ladrón</td>
+            <td>Incluye una mochila, una bolsa con 1000 bolas de metal, 10 pies de cordel, una campana, 5 velas, una palanca, un martillo, 10 pitones, una linterna con capuchón, 2 frascos de aceite, raciones para 5 días, una lata de yesca y un odre. La mochila lleva una cuerda de cáñamo de 50 pies enrollada y colgada en el lateral.</td>
+            <td>16 po</td>
+          </tr>
+          <tr>
+            <td>Pack de sacerdote</td>
+            <td>Incluye una mochila, una manta, 10 velas, una lata de yesca, un cepillo para limosnas, 2 bloques de incienso, un incensario, vestiduras, raciones para 2 días y un odre.</td>
+            <td>19 po</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <img src="img/equipo.png" alt="Tienda de Equipo" style="max-width: 100%; margin-top: 20px;">
+
+      <br>
+      <button class="button button-back" onclick="goBack()">Volver Atrás</button>
+      <script> function goBack() {
+        window.history.back();
+      }</script>
+    </div>
+  </body>
+</html>
