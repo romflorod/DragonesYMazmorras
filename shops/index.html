@@ -4,6 +4,8 @@
   <meta name="keywords" content="Herramientas, dragones y mazmorras, D&D, DND">
   <title>Tienda de Dragones y Mazmorras</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
     .button-container {
       margin-top: 20px;
       display: flex;
@@ -45,7 +47,7 @@
     body {
       background-color: #000;
       color: #fff;
-      font-family: 'Gothic', sans-serif;
+      font-family: 'MedievalSharp', cursive;
       margin: 0;
       padding: 0;
     }
@@ -164,5 +166,13 @@
       </ul>
     </div>
   </div>
+  <div class="button-container">
+
+  <button class="button button-back" onclick="goBack()">Volver Atrás</button>
+  <script> function goBack() {
+    window.history.back();
+  }</script>
+</div>
+
 </body>
 </html>

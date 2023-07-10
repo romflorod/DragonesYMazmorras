@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido a la Escuela Mágica</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #ff4d6d;
+      text-shadow: -1px -1px 0px #000, 1px 1px 0px #000;
+      text-align: center;
+    }
+    
+    body {
+      font-family: 'MedievalSharp', cursive;
+      background-color: #000000;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffffff;
+      background-color: #8b0000;
+      padding: 10px;
+    }
+
+    .button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-family: 'Arial', sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: #8b281c;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button-back {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .button-back:hover {
+      background-color: #777777;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 10px;
+      text-align: justify;
+    }
+
+    .image {
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .image img {
+      max-width: 400px;
+    }
+
+    
+
+    .link {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    a {
+      color: #ff0000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+    .magic-effects {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+    
+    .star {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #ffcc00;
+      border-radius: 50%;
+      animation: sparkle 1s infinite;
+    }
+    
+    @keyframes sparkle {
+      0% {
+        opacity: 0;
+        transform: translateY(-50%) scale(0);
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(-50%) scale(1);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-50%) scale(0);
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bienvenido a la Escuela Mágica</h1>
+    <div class="image">
+      <img src="img/wizard.png" alt="Magician">
+      <div class="magic-effects">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </div>
+      
+    </div>
+    <p>En la Escuela Mágica, te adentrarás en un mundo de hechizos, dragones y mazmorras. Descubre el arte antiguo de la magia y despierta tus poderes ocultos.</p>
+    <p>Nuestra escuela es famosa por su enfoque en diferentes ramas de la magia, como la magia elemental, la invocación de criaturas y la alquimia. Nuestros maestros expertos te guiarán en tu viaje hacia el dominio de los conjuros más poderosos.</p>
+    <p>Explora nuestros salones de clase encantados, bibliotecas repletas de conocimiento arcano y laboratorios donde podrás crear tus propias pociones y artefactos mágicos.</p>
+    <p>Únete a nosotros y sumérgete en la magia y la fantasía sin límites. ¡Descubre el poder que yace dentro de ti!</p>
+    <div class="link">
+      <a href="/spellsList.html">Ver lista completa de conjuros</a>
+    </div>
+    <h2>Explicación de hechizos.</h2>
+    <p>El multiverso de D&D está impregnado de magia que se materializa en forma de conjuros. En el programa de hoy vamos a explicaros cómo lanzar y usar correctamente estos conjuros para ayudar a vuestros personajes a salir bien parados de las situaciones más difíciles. Dependiendo de la clase del personaje, deberá aprender a usarlos de una forma particular. A continuación, exponemos las reglas. Y al final, tenéis el reproductor de pódcast, para que os unáis a nosotros por las orejas en esta cibersesión dedicada a la fantasía de magia y espada. ¡No os perdáis las novedades editoriales que os traemos esta semana!</p>
+    <p><strong>¿Qué es un conjuro?</strong></p>
+    <p>Un conjuro es un efecto mágico, una expresión de la energía sobrenatural que permea el multiverso.</p>
+    <p>Los conjuros pueden ser una herramienta, un arma o una protección, dependiendo de cómo y cuándo se quieran usar, de la necesidad del momento.</p>
+    <p><strong>Nivel del conjuro</strong></p>
+    <p>Los niveles de poder de los conjuros están entre el cero y el nueve, siendo pobre el de nivel cero y potente el de nivel nueve. También existen los trucos, que son de nivel cero.</p>
+    <p><strong>Conjuros conocidos y preparados</strong></p>
+    <p>No es posible lanzar cualquier conjuro. En primer lugar, el personaje debe conocerlo y memorizarlo, o acceder a él mediante un objeto arcano.</p>
+    <p>Dependiendo de la clase del lanzador, este deberá grabar los conjuros en su mente o pasar por un proceso de preparación del mismo. Los conjuros que el lanzador puede contener en su mente dependen de su nivel de personaje.</p>
+    <p>Si el lanzador lleva armadura, deberá cuidar de que le permita concentrarse para poder lanzar los conjuros que conozca o tenga preparados.</p>
+    <p><strong>Espacio de conjuros</strong></p>
+    <p>El personaje que puede lanzar conjuros, independientemente de los que conozca o tenga preparados, solamente puede lanzar un número limitado de ellos hasta que descanse. Cada clase de personaje describe cuántos espacios y de qué nivel son, en cada nivel de personaje. Por ejemplo, un mago de nivel tres posee cuatro espacios para conjuros de nivel uno y dos espacios para conjuros de nivel dos o inferior.</p>
+    <p>Para poder lanzar un conjuro:</p>
+    <ul>
+      <li>Hay que conocer o haber preparado el conjuro con anterioridad.</li>
+      <li>Se debe gastar un espacio de lanzamiento de conjuros.</li>
+      <li>El conjuro debe caber en un espacio que no haya sido usado por otro conjuro anteriormente. Un conjuro de nivel uno cabe en cualquier espacio, pero un conjuro de nivel tres no cabe en espacios de nivel dos ni de niveluno.</li>
+      <li>Los espacios gastados se recuperarán después de un descanso largo.</li>
+      <li>Algunas criaturas pueden lanzar conjuros sin usar espacios de conjuros.</li>
+    </ul>
+    <p><strong>Lanzar un conjuro a un nivel superior</strong></p>
+    <p>Cuando se lanza un conjuro con un espacio de nivel superior al nivel del conjuro, este conjuro pasa a ser del nivel del espacio con el que se ha lanzado.</p>
+    <p>Por ejemplo, un conjuro de nivel dos lanzado con un espacio de nivel cuatro pasa a ser un conjuro de nivel cuatro, pudiendo ser más poderoso siempre que en la descripción del conjuro así lo indique.</p>
+    <p><strong>Trucos</strong></p>
+    <p>Los trucos son conjuros que, por su sencillez o por su constante práctica, se han grabado en la mente del lanzador. Esto significa que no gastan espacio de conjuro, se pueden lanzar a voluntad y tienen un nivel de conjuro de cero.</p>
+    <p><strong>Rituales</strong></p>
+    <p>Los conjuros etiquetados con la palabra "ritual" se pueden usar de la forma antes descrita o haciendo un ritual. Esto significa que se precisan diez minutos más de tiempo para llevarlo a cabo, pero en contrapartida no gastan espacio de conjuro al lanzarlo.</p>
+    <p>El lanzador debe tener la capacidad de hacer rituales para poder lanzarlo de esta forma, aparte de tenerlo preparado o estar en su lista de conjuros conocidos.</p>
+    <p><strong>Lanzar un Conjuro</strong></p>
+    <p>Las reglas básicas de lanzamiento de conjuros son idénticas para todos los personajes, independientemente de la clase o efectos de este.</p>
+    <p>Cada conjuro tiene en su descripción el nombre, nivel, escuela mágica, tiempo de lanzamiento, alcance, componentes y duración. También los efectos que produce su lanzamiento.</p>
+    <p><strong>Tiempo de lanzamiento de conjuros</strong></p>
+    <p>Todos los conjuros necesitan un tiempo para ser lanzados, ya sea por su recitado o por otros elementos necesarios para ello. Lo habitual es que necesiten una acción para lanzarlo, pero algunos conjuros necesitan una acción adicional, una reacción o más tiempo.</p>
+    <p><strong>Acción adicional</strong></p>
+    <p>Un conjuro lanzado como acción adicional es un conjuro rapidísimo.</p>
+    <ul>
+      <li>No se puede haber utilizado ninguna acción adicional en el turno.</li>
+      <li>No se puede lanzar otro conjuro en el turno.</li>
+      <li>Se puede haber lanzado o lanzar un truco en una acción sencilla.</li>
+    </ul>
+    <p><strong>Reacciones</strong></p>
+    <p>Hay conjuros que se pueden lanzar como reacciones, como respuesta a algún suceso. La descripción del conjuro explicará las condiciones en las que se puede lanzar el mismo.</p>
+    <p><strong>Tiempos de lanzamiento más largos</strong></p>
+    <p>Algunos conjuros necesitan de una concentración máxima y un tiempo de lanzamiento más largo, esto se aplica utilizando varias acciones de diferentes turnos, lo indicará la descripción del mismo.</p>
+    <p>Perder la concentración hará que el conjuro falle y se tenga que volver a empezar, no gastará espacio de conjuro.</p>
+    <p><strong>Alcance</strong></p>
+    <p>Cada conjuro tiene un alcance predeterminado, y para que sea efectivo, el objetivo al que va dirigido debe estar dentro de ese alcance.</p>
+    <p>El alcance puede ser un punto, una criatura, algo fijo, pero también puede ser una zona, un espacio de X pies y con una forma definida, ya sea cónica, rectangular, etc.</p>
+    <p><strong>Componentes</strong></p>
+    <p>Los componentes son los requisitos físicos que necesita el conjuro. Estos pueden ser verbales (V), somáticos (S) y/o materiales (M). La falta de algún componente será la causa de no poder usar el conjuro.</p>
+    <p>Verbal: este es el componente más usual de los conjuros. Cuando haya una zona en silencio o no se pueda hablar por estar amordazado, no se podrá usar este tipo de conjuros.</p>
+    <p>Somático: este componente precisa de una ejecución de gestos o movimientos específicos. Es necesario tener como mínimo una mano libre para poder usar este tipo de conjuros.</p>
+    <p>Material: para lanzar estos conjuros se precisa algún objeto indicado en el conjuro, como saquitos de componentes, canalizadores mágicos o componentes físicos que se gastarán al usar el conjuro. Aunque se pueden comprar más cuando sea preciso.</p>
+    <p><strong>Duración</strong></p>
+    <p>La duración es el tiempo que está activo el conjuro. Puede ser desde un asalto, minutos, horas o años... Cada conjuro explica cuánto tiempo dura en el tiempo. Los efectos permanecen durante ese tiempo o hasta cuando son disipados o destruidos.</p>
+    <p>Instantáneo: su efecto es tan rápido que no puede ser disipado, hace su cometido en el acto, ya sea curar, dañar o lo que el conjuro explique.</p>
+    <p>Concentración: para realizar el conjuro, es preciso tener una concentración máxima o que se mantenga en el tiempo. Al dejar de estar concentrado, el efecto o la realización se pierde. Se puede dejar de estar concentrado en cualquier momento y cortar el conjuro, entonces se puede hacer:</p>
+    <ul>
+      <li>Lanzar otro conjuro que necesite concentración.</li>
+      <li>Recibir daño y no pasar una tirada de salvación con dificultad 10 o la mitad del daño recibido, lo que sea mayor.</li>
+      <li>Quedar incapacitado o morir.</li>
+    </ul>
+    <p><strong>Objetivos</strong></p>
+    <p>El objetivo es el punto al que va dirigido el conjuro, ya sea una criatura, zona u objeto. El objetivo puede no saber que está bajo ese efecto.</p>
+    <p>Deben estar con un camino despejado hacia él, no puede estar conuna cobertura completa.</p>
+    <p>También se puede elegir a uno mismo como objetivo, siempre que el conjuro lo permita y se esté dentro del alcance.</p>
+    <p><strong>Áreas de efecto</strong></p>
+    <p>En la descripción del conjuro en Dungeons and Dragons se especifica el área de efecto y la forma del mismo, el punto de salida suele ser el lanzador del conjuro. Desde el punto de origen se creará una forma donde el conjuro actuará dentro de ella y se le aplicará a quienes estén allí dentro.</p>
+    <ul>
+      <li>Cilindro</li>
+      <li>Cono</li>
+      <li>Cubo</li>
+      <li>Esfera</li>
+      <li>Línea</li>
+    </ul>
+    <p><strong>Tirada de salvación</strong></p>
+    <p>Algunos conjuros especifican que se puede hacer una tirada de salvación para dejar su efecto a medias. Cada conjuro indica la Característica que se debe usar. La Clase de Dificultad a salvar es de ocho + aptitud mágica + bonificador por competencia + modificadores especiales.</p>
+    <p><strong>Tirada de ataque</strong></p>
+    <p>Algunos conjuros necesitan una tirada de ataque para impactar.</p>
+    <p>La bonificación es la aptitud mágica + el modificador de competencia.</p>
+    <p>Normalmente, implican un ataque a distancia, penalizando con desventaja si se está a cinco pies de una criatura hostil que pueda verlo y no esté incapacitada.</p>
+    <p><strong>Acumular efectos mágicos</strong></p>
+    <p>Los efectos de conjuros distintos se acumulan siempre que sus duraciones se solapen. Con los conjuros iguales no sucede igual, solo se aplica el más potente.</p>
+    <br>
+    <button class="button button-back" onclick="goBack()">Volver Atrás</button>
+
+  </div>
+  <script> function goBack() {
+    window.history.back();
+  }</script>
+</body>
+</html>
+
+
