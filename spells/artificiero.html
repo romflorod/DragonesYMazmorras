@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escuela de Artificieros - Hechizos</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+    body {
+      font-family: 'MedievalSharp', cursive;
+      background-color: #000000;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #000000;
+      background-color: #ff0000;
+      padding: 10px;
+    }
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #ff4d6d;
+      text-shadow: -1px -1px 0px #000, 1px 1px 0px #000;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th {
+      background-color: #ff4d6d;
+      color: #ffffff;
+      padding: 10px;
+      text-align: left;
+    }
+    td {
+      padding: 10px;
+      border-bottom: 1px solid #ffffff;
+    }
+    .dnd-table {
+      background-color: #2b2b2b;
+      border: 1px solid #ffffff;
+      border-collapse: collapse;
+      color: #ffffff;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    .dnd-table th {
+      background-color: #ff0000;
+      border-bottom: 1px solid #ffffff;
+      padding: 10px;
+      text-align: center;
+    }
+    .dnd-table td {
+      border-bottom: 1px solid #ffffff;
+      padding: 10px;
+      text-align: center;
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .button {
+      display: inline-block;
+      background-color: #ff0000;
+      color: #ffffff;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Escuela de Artificieros</h1>
+    <h2>¡Bienvenido a la página de hechizos de la Escuela de Artificieros!</h2>
+    <img src="img/artificero.png " alt="Libro de hechizos" style="display: block; margin: 0 auto; max-width: 400px; height: auto;">
+    <br>
+    <h2> Aquí encontrarás una lista de hechizos clasificados por nivel, rama y escuela. Explora los diversos hechizos y descubre su magia.</h2>
+    <table class="dnd-table">
+        <thead>
+          <tr>
+            <th>Trucos</th>
+            <th>Rama</th>
+            <th>Escuela</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Agarre Electrizante</td>
+            <td>Evocación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Descarga de Fuego</td>
+            <td>Evocación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Guía</td>
+            <td>Adivinación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Látigo de espinas</td>
+            <td>Transmutación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Luces danzantes</td>
+            <td>Evocación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Luz</td>
+            <td>Evocación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Mano de mago</td>
+            <td>Conjuración</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Mensaje</td>
+            <td>Transmutación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Piedad con los moribundos</td>
+            <td>Nigromancia</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Prestidigitación</td>
+            <td>Transmutación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rayo de escarcha</td>
+            <td>Evocación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Reparar</td>
+            <td>Transmutación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Resistencia</td>
+            <td>Abjuración</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rociada Venenosa</td>
+            <td>Conjuración</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Salpicadura Acida</td>
+            <td>Conjuración</td>
+            <td></td>
+          </tr>
+            <tr>
+            <td>Congelación</td>
+            <td>Evocación</td>
+            <td>Xanathar</td>
+          </tr>
+          <tr>
+            <td>Crear hoguera</td>
+            <td>Conjuración</td>
+            <td>Xanathar</td>
+          </tr>
+          <tr>
+            <td>Palmada atronadora</td>
+            <td>Evocación</td>
+            <td>Xanathar</td>
+          </tr>
+          <tr>
+            <td>Piedra mágica</td>
+            <td>Transmutación</td>
+            <td>Xanathar</td>
+          </tr>
+          <tr>
+            <td>Atraer el relámpago</td>
+            <td>Evocación</td>
+            <td>Xanathar</td>
+          </tr>
+          <tr>
+            <td>Estallido de espadas</td>
+            <td>Conjuración</td>
+            <td>Tasha</td>
+          </tr>
+          <tr>
+            <td>Filo Atronador</td>
+            <td>Evocación</td>
+            <td>Tasha</td>
+          </tr>
+          <tr>
+            <td>Filo de las llamas verdes</td>
+            <td>Evocación</td>
+            <td>Tasha</td>
+          </tr>
+        </tbody>
+      </table>
+      <img src="img/libro.png " alt="Libro de hechizos" style="display: block; margin: 0 auto; max-width: 280px; height: auto;">
+      <br>
+      <table class="dnd-table">
+        <thead>
+          <tr>
+            <th>Hechizos</th>
+            <th>Nivel</th>
+            <th>Rama</th>
+            <th>Escuela</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alarma</td>
+            <td>1</td>
+            <td>Abjuración</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Caída de pluma</td>
+            <td>1</td>
+            <td>Transmutación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Curar heridas</td>
+            <td>1</td>
+            <td>Evocación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Detectar magia</td>
+            <td>1</td>
+            <td>Adivinación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Disfrazarse</td>
+            <td>1</td>
+            <td>Ilusión</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Falsa Vida</td>
+            <td>1</td>
+            <td>Nigromancia</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Fuego feérico</td>
+            <td>1</td>
+            <td>Evocación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Grasa</td>
+            <td>1</td>
+            <td>Conjuración</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Identificar</td>
+            <td>1</td>
+            <td>Adivinación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Purificar comida y bebida</td>
+            <td>1</td>
+            <td>Transmutación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Retirada expeditiva</td>
+            <td>1</td>
+            <td>Transmutación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Salto</td>
+            <td>1</td>
+            <td>Transmutación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Santuario</td>
+            <td>1</td>
+            <td>Abjuración</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Zancada prodigiosa</td>
+            <td>1</td>
+            <td>Transmutación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Absorber elementos</td>
+            <td>1</td>
+            <td>Abjuración</td>
+            <td>Xanathar</td>
+          </tr>
+          <tr>
+            <td>Catapulta</td>
+            <td>1</td>
+            <td>Transmutación</td>
+            <td>Xanathar</td>
+          </tr>
+          <tr>
+            <td>Trampa de lazo</td>
+            <td>1</td>
+            <td>Abjuración</td>
+            <td>Xanathar</td>
+          </tr>
+          <tr>
+            <td>Aliento Caustico de Tasha</td>
+            <td>1</td>
+            <td>Evocación</td>
+            <td>Tasha</td>
+          </tr>
+          <tr>
+            <td>Alterar el propio aspecto</td>
+            <td>2</td>
+            <td>Transmutación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Agrandar/Reducir</td>
+            <td>2</td>
+            <td>Transmutación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Arma mágica</td>
+            <td>2</td>
+            <td>Transmutación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Aumentar característica</td>
+            <td>2</td>
+            <td>Transmutación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Auxilio divino</td>
+            <td>2</td>
+            <td>Abjuración</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Boca mágica</td>
+            <td>2</td>
+            <td>Ilusión</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Calentar metal</td>
+            <td>2</td>
+            <td>Transmutación</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Cerradura arcana</td>
+            <td>2</td>
+            <td>Abjuración</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Contorno borroso</td>
+            <td>2</td>
+            <td>Ilusión</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Invisibilidad</td>
+            <td>2</td>
+            <td>Ilusión</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Levitar</td>
+            <td>2</td>
+            <td>Transmutación</td>
+            <td></td>
+          </tr>
+        </tr>
+        <tr>
+          <td>Llama continua</td>
+          <td>2</td>
+          <td>Evocación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Protección contra el veneno</td>
+          <td>2</td>
+          <td>Abjuración</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Restablecimiento menor</td>
+          <td>2</td>
+          <td>Abjuración</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Visión en la oscuridad</td>
+          <td>2</td>
+          <td>Transmutación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Trepar cual arácnido</td>
+          <td>2</td>
+          <td>Transmutación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Truco de la cuerda</td>
+          <td>2</td>
+          <td>Conjuración</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Ver lo invisible</td>
+          <td>2</td>
+          <td>Adivinación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Restablecimiento menor</td>
+          <td>2</td>
+          <td>Abjuración</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Escritura celeste</td>
+          <td>2</td>
+          <td>Transmutación</td>
+          <td>Xanathar</td>
+        </tr>
+        <tr>
+          <td>Pirotecnia</td>
+          <td>2</td>
+          <td>Transmutación</td>
+          <td>Xanathar</td>
+        </tr>
+        <tr>
+          <td>Arma Elemental</td>
+          <td>3</td>
+          <td>Transmutación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Caminar sobre las aguas</td>
+          <td>3</td>
+          <td>Transmutación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Crear comida y bebida</td>
+          <td>3</td>
+          <td>Conjuración</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Disipar Magia</td>
+          <td>3</td>
+          <td>Abjuración</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Glifo custodio</td>
+          <td>3</td>
+          <td>Abjuración</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Intermitencia</td>
+          <td>3</td>
+          <td>Transmutación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Protección contra la energía</td>
+          <td>3</td>
+          <td>Abjuración</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Respiración acuática</td>
+          <td>3</td>
+          <td>Transmutación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Revivir</td>
+          <td>3</td>
+          <td>Nigromancia</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Volar</td>
+          <td>3</td>
+          <td>Transmutación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Flechas flamígeras</td>
+          <td>3</td>
+          <td>Transmutación</td>
+          <td>Xanathar</td>
+        </tr>
+        <tr>
+          <td>Servidor minúsculo</td>
+          <td>3</td>
+          <td>Transmutación</td>
+          <td>Xanathar</td>
+        </tr>
+        <tr>
+          <td>Siestecita</td>
+          <td>3</td>
+          <td>Encantamiento</td>
+          <td>Xanathar</td>
+        </tr>
+        <tr>
+          <td>Fortalecer Mente</td>
+          <td>3</td>
+          <td>Abjuración</td>
+          <td>Tasha</td>
+        </tr>
+        <tr>
+          <td>Zancada de Ashardalon</td>
+          <td>3</td>
+          <td>Transmutación</td>
+          <td>Fizban</td>
+        </tr>
+        <tr>
+          <td>Cofre secreto de Leomund</td>
+          <td>4</td>
+          <td>Conjuración</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Elaborar</td>
+          <td>4</td>
+          <td>Transmutación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Esfera elástica de Otiluke</td>
+          <td>4</td>
+          <td>Evocación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Libertad de movimiento</td>
+          <td>4</td>
+          <td>Abjuración</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Mastín fiel de Mordenkainen</td>
+          <td>4</td>
+          <td>Conjuración</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Ojo arcano</td>
+          <td>4</td>
+          <td>Adivinación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Piel pétrea</td>
+          <td>4</td>
+          <td>Abjuración</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Sanctasanctórum privado de Mordenkainen</td>
+          <td>4</td>
+          <td>Abjuración</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Transformar Piedra</td>
+          <td>4</td>
+          <td>Transmutación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Perdición elemental</td>
+          <td>4</td>
+          <td>Transmutación</td>
+          <td>Xanathar</td>
+        </tr>
+        <tr>
+          <td>Invocar constructo</td>
+          <td>4</td>
+          <td>Conjuración</td>
+          <td>Tasha</td>
+        </tr>
+        <tr>
+          <td>Animar los objetos</td>
+          <td>5</td>
+          <td>Transmutación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Creación</td>
+          <td>5</td>
+          <td>Ilusión</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>La mano de Bigby</td>
+          <td>5</td>
+          <td>Evocación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Muro de Piedra</td>
+          <td>5</td>
+          <td>Evocación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Restablecimiento mayor</td>
+          <td>5</td>
+          <td>Abjuración</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Empoderar habilidades</td>
+          <td>5</td>
+          <td>Transmutación</td>
+          <td>Xanathar</td>
+        </tr>
+        <tr>
+          <td>Transmutar roca</td>
+          <td>5</td>
+          <td>Transmutación</td>
+          <td>Xanathar</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    
+      
+    <div class="button-container">
+      <a href="artificieroDetalles.html" class="button">Ver detalles</a>
+    </div>
+  </div>
+</body>
+</html>
