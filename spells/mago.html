@@ -1,0 +1,2145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escuela de Magos - Hechizos</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+    body {
+      font-family: 'MedievalSharp', cursive;
+      background-color: #000000;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #000000;
+      background-color: #ff0000;
+      padding: 10px;
+    }
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #ff4d6d;
+      text-shadow: -1px -1px 0px #000, 1px 1px 0px #000;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th {
+      background-color: #ff4d6d;
+      color: #ffffff;
+      padding: 10px;
+      text-align: left;
+    }
+    td {
+      padding: 10px;
+      border-bottom: 1px solid #ffffff;
+    }
+    .dnd-table {
+      background-color: #2b2b2b;
+      border: 1px solid #ffffff;
+      border-collapse: collapse;
+      color: #ffffff;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    .dnd-table th {
+      background-color: #ff0000;
+      border-bottom: 1px solid #ffffff;
+      padding: 10px;
+      text-align: center;
+    }
+    .dnd-table td {
+      border-bottom: 1px solid #ffffff;
+      padding: 10px;
+      text-align: center;
+    }
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+.button {
+  display: inline-block;
+  background-color: #ff0000;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #cc0000;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Escuela de Magos</h1>
+    <h2>¡Bienvenido a la página de hechizos de la Escuela de Magos!</h2>
+    <img src="img/mago.png " alt="Libro de hechizos" style="display: block; margin: 0 auto; max-width: 190px; height: auto;">
+    <br>
+    <h2> Aquí encontrarás una lista de hechizos clasificados por nivel, rama y escuela. Explora los diversos hechizos y descubre su magia.</h2>
+    <table class="dnd-table">
+      <thead>
+        <tr>
+          <th>Trucos</th>
+          <th>Rama</th>
+          <th>Escuela</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Agarre Electrizante</td>
+          <td>Evocación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Amistad</td>
+          <td>Encantamiento</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Descarga de Fuego</td>
+          <td>Evocación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Guardia de Cuchillas</td>
+          <td>Abjuración</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Ilusión menor</td>
+          <td>Ilusión</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Impacto certero</td>
+          <td>Adivinación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Luces danzantes</td>
+          <td>Evocación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Luz</td>
+          <td>Evocación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Mano de mago</td>
+          <td>Conjuración</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Mensaje</td>
+          <td>Transmutación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Prestidigitación</td>
+          <td>Transmutación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Rayo de escarcha</td>
+          <td>Evocación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Reparar</td>
+          <td>Transmutación</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Rociada venenosa</td>
+          <td>Conjuración</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Salpicadura Acida</td>
+          <td>Conjuración</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Toque helado</td>
+          <td>Nigromancia</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Congelación</td>
+          <td>Evocación</td>
+          <td>Xanathar</td>
+        </tr>
+        <tr>
+          <td>Controlar llamas</td>
+          <td>Transmutación</td>
+          <td>Xanathar</td>
+        </tr>
+        <tr>
+          <td>Crear hoguera</td>
+          <td>Conjuración</td>
+          <td>Xanathar</td>
+        </tr>
+        <tr>
+          <td>Infestación</td>
+          <td>Conjuración</td>
+          <td>Xanathar</td>
+        </tr>
+        <tr>
+          <td>Moldear Tierra</td>
+          <td>Transmutación</td>
+          <td>Xanathar</td>
+        </tr>
+        <tr>
+          <td>Palmada atronadora</td>
+          <td>Evocación</td>
+          <td>Xanathar</td>
+        </tr>
+        <tr>
+          <td>Ráfaga</td>
+          <td>Transmutación</td>
+          <td>Xanathar</td>
+        </tr>
+        <tr>
+          <td>Tocar a los muertos</td>
+          <td>Nigromancia</td>
+          <td>Xanathar</td>
+        </tr>
+        <tr>
+          <td>Astilla Mental</td>
+          <td>Encantamiento</td>
+          <td>Tasha</td>
+        </tr>
+        <tr>
+          <td>Atraer el relámpago</td>
+          <td>Evocación</td>
+          <td>Tasha</td>
+        </tr>
+        <tr>
+          <td>Estallido de espadas</td>
+          <td>sConjuración</td>
+          <td>Tasha</td>
+        </tr>
+        <tr>
+          <td>Filo Atronador</td>
+          <td>Evocación</td>
+          <td>Tasha</td>
+        </tr>
+        <tr>
+          <td>Filo de las llamas verdes</td>
+          <td>Evocación</td>
+          <td>Tasha</td>
+        </tr>
+      </tbody>
+    </table>
+    
+<img src="img/libro.png " alt="Libro de hechizos" style="display: block; margin: 0 auto; max-width: 280px; height: auto;">
+<br>
+<table class="dnd-table">
+  <thead>
+    <tr>
+      <th>Hechizos</th>
+      <th>Nivel</th>
+      <th>Escuela</th>
+      <th>Rama</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alarma</td>
+      <td>1</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Armadura de mago</td>
+      <td>1</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Caída de pluma</td>
+      <td>1</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Detectar magia</td>
+      <td>1</td>
+      <td>Adivinación</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Disco flotante de Tenser</td>
+      <td>1</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Disfrazarse</td>
+      <td>1</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Dormir</td>
+      <td>1</td>
+      <td></td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Encontrar familiar</td>
+      <td>1</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Entender idiomas</td>
+      <td>1</td>
+      <td>Adivinación</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Escudo</td>
+      <td>1</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Falsa Vida</td>
+      <td>1</td>
+      <td></td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Grasa</td>
+      <td>1</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Hechizar persona</td>
+      <td>1</td>
+      <td></td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Identificar</td>
+      <td>1</td>
+      <td>Adivinación</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Imagen silenciosa</td>
+      <td>1</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Manos ardientes</td>
+      <td>1</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Nube de oscurecimiento</td>
+      <td>1</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Ola atronadora</td>
+      <td>1</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Orbe cromático</td>
+      <td>1</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Protección contra el bien y el mal</td>
+      <td>1</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Proyectil mágico</td>
+      <td>1</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Rayo de hechicería</td>
+      <td>1</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Rayo nauseabundo</td>
+      <td>1</td>
+      <td></td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Retirada expeditiva</td>
+      <td>1</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Risa Horrible de Tasha</td>
+      <td>1</td>
+      <td></td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Rociada de color</td>
+      <td>1</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Salto</td>
+      <td>1</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Sirviente invisible</td>
+      <td>1</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Texto Ilusorio</td>
+      <td>1</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Zancada prodigiosa</td>
+      <td>1</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Absorber elementos</td>
+      <td>1</td>
+      <td>Xanathar</td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Catapulta</td>
+      <td>1</td>
+      <td>Xanathar</td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Causar miedo</td>
+      <td>1</td>
+      <td>Xanathar</td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Cuchillo de hielo</td>
+      <td>1</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Temblor de tierra</td>
+      <td>1</td>
+      <td>Xanathar</td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Trampa de lazo</td>
+      <td>1</td>
+      <td>Xanathar</td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Aliento Caustico de Tasha</td>
+      <td>1</td>
+      <td>Tasha</td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Abrir</td>
+      <td>2</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Agrandar/Reducir</td>
+      <td>2</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Alterar el propio aspecto</td>
+      <td>2</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Arma mágica</td>
+      <td>2</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Augurio</td>
+      <td>2</td>
+      <td></td>
+      <td>Adivinación</td>
+    </tr>
+    <tr>
+      <td>Aumentar característica</td>
+      <td>2</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Aura mágica de Nystul</td>
+      <td>2</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Boca mágica</td>
+      <td>2</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Cerradura arcana</td>
+      <td>2</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Ceguera/Sordera</td>
+      <td>2</td>
+      <td></td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Contorno borroso</td>
+      <td>2</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Corona de locura</td>
+      <td>2</td>
+      <td></td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Detectar pensamientos</td>
+      <td>2</td>
+      <td></td>
+      <td>Adivinación</td>
+    </tr>
+    <tr>
+      <td>Dulce descanso</td>
+      <td>2</td>
+      <td></td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Esfera flamígera</td>
+      <td>2</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Flecha ácida de Melf</td>
+      <td>2</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Fuerza fantasmal</td>
+      <td>2</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Hacer añicos</td>
+      <td>2</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Imagen múltiple</td>
+      <td>2</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Inmovilizar persona</td>
+      <td>2</td>
+      <td></td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Invisibilidad</td>
+      <td>2</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Llama continua</td>
+      <td>2</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Levitar</td>
+      <td>2</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Localizar objeto</td>
+      <td>2</td>
+      <td></td>
+      <td>Adivinación</td>
+    </tr>
+    <tr>
+      <td>Nube de dagas</td>
+      <td>2</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Oscuridad</td>
+      <td>2</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Paso brumoso</td>
+      <td>2</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Ráfaga de viento</td>
+      <td>2</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Rayo abrasador</td>
+      <td>2</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Rayo de debilitamiento</td>
+      <td>2</td>
+      <td></td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Sugestión</td>
+      <td>2</td>
+      <td></td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Telaraña</td>
+      <td>2</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Truco de la cuerda</td>
+      <td>2</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Trepar cual arácnido</td>
+      <td>2</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Ver lo invisible</td>
+      <td>2</td>
+      <td></td>
+      <td>Adivinación</td>
+    </tr>
+    <tr>
+      <td>Visión en la oscuridad</td>
+      <td>2</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Abrasador de Aganazzar</td>
+      <td>2</td>
+      <td>Xanathar</td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Agarre de tierra de MaximIliano</td>
+      <td>2</td>
+      <td>Xanathar</td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Aliento del dragón</td>
+      <td>2</td>
+      <td>Xanathar</td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Atar a la tierra</td>
+      <td>2</td>
+      <td>Xanathar</td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Diablo de polvo</td>
+      <td>2</td>
+      <td>Xanathar</td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Escritura celeste</td>
+      <td>2</td>
+      <td>Xanathar</td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Espina mental</td>
+      <td>2</td>
+      <td>Xanathar</td>
+      <td>Adivinación</td>
+    </tr>
+    <tr>
+      <td>Hoja de sombra</td>
+      <td>2</td>
+      <td>Xanathar</td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Pirotecnia</td>
+      <td>2</td>
+      <td>Xanathar</td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Tormenta de bolas de nieve de Snilloc</td>
+      <td>2</td>
+      <td>Xanathar</td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Viento de salvaguardia</td>
+      <td>2</td>
+      <td>Xanathar</td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Ráfaga helada de Rime</td>
+      <td>2</td>
+      <td>Fizban</td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Travesuras de Nathair</td>
+      <td>2</td>
+      <td>Fizban</td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Acelerar</td>
+      <td>3</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Bola de fuego</td>
+      <td>3</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Círculo mágico</td>
+      <td>3</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Clarividencia</td>
+      <td>3</td>
+      <td></td>
+      <td>Adivinación</td>
+    </tr>
+    <tr>
+      <td>Contrahechizo</td>
+      <td>3</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Corcel fantasmal</td>
+      <td>3</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Disipar magia</td>
+      <td>3</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Don de lenguas</td>
+      <td>3</td>
+      <td></td>
+      <td>Adivinación</td>
+    </tr>
+    <tr>
+      <td>Fingir muerte</td>
+      <td>3</td>
+      <td></td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Forma gaseosa</td>
+      <td>3</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Glifo custodio</td>
+      <td>3</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Hablar con los muertos</td>
+      <td>3</td>
+      <td></td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Indetectable</td>
+      <td>3</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Imagen mayor</td>
+      <td>3</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Intermitencia</td>
+      <td>3</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Lanzar maldición</td>
+      <td>3</td>
+      <td></td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Miedo</td>
+      <td>3</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Nube apestosa</td>
+      <td>3</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Patrón hipnótico</td>
+      <td>3</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Pequeña choza de Leomund</td>
+      <td>3</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Protección contra la energía</td>
+      <td>3</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Quitar maldición</td>
+      <td>3</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Ralentizar</td>
+      <td>3</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Relámpago</td>
+      <td>3</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Reanimar a los muertos</td>
+      <td>3</td>
+      <td></td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Recado</td>
+      <td>3</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Respiración acuática</td>
+      <td>3</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Toque vampírico</td>
+      <td>3</td>
+      <td></td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Tormenta de granizo</td>
+      <td>3</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Volar</td>
+      <td>3</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Enemigos abundantes</td>
+      <td>3</td>
+      <td>Xanathar</td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Flechas flamígeras</td>
+      <td>3</td>
+      <td>Xanathar</td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Invocar demonios menores</td>
+      <td>3</td>
+      <td>Xanathar</td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Muro de arena</td>
+      <td>3</td>
+      <td>Xanathar</td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Muro de agua</td>
+      <td>3</td>
+      <td>Xanathar</td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Meteoros diminutos de Melf</td>
+      <td>3</td>
+      <td>Xanathar</td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Ola de marea</td>
+      <td>3</td>
+      <td>Xanathar</td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Paso de trueno</td>
+      <td>3</td>
+      <td>Xanathar</td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Servidor minúsculo</td>
+      <td>3</td>
+      <td>Xanathar</td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Siestecita</td>
+      <td>3</td>
+      <td>Xanathar</td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Tierra en erupción</td>
+      <td>3</td>
+      <td>Xanathar</td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Transferencia de vida</td>
+      <td>3</td>
+      <td>Xanathar</td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Fortalecer Mente</td>
+      <td>3</td>
+      <td>Tasha</td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Invocar engendro de las Sombras</td>
+      <td>3</td>
+      <td>Tasha</td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Invocar feérico</td>
+      <td>3</td>
+      <td>Tasha</td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Invocar no muerto</td>
+      <td>3</td>
+      <td>Tasha</td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Velo de espíritus</td>
+      <td>3</td>
+      <td>Tasha</td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Zancada de Ashardalon</td>
+      <td>3</td>
+      <td>Fizban</td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Adivinación</td>
+      <td>4</td>
+      <td></td>
+      <td>Adivinación</td>
+    </tr>
+    <tr>
+      <td>Asesino fantasmal</td>
+      <td>4</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Cofre secreto de Leomund</td>
+      <td>4</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Confusión</td>
+      <td>4</td>
+      <td></td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Conjurar elementales menores</td>
+      <td>4</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Controlar el agua</td>
+      <td>4</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Destierro</td>
+      <td>4</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Elaborar</td>
+      <td>4</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Escudo de fuego</td>
+      <td>4</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Esfera elástica de Otiluke</td>
+      <td>4</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Invisibilidad mayor</td>
+      <td>4</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Localizar criatura</td>
+      <td>4</td>
+      <td></td>
+      <td>Adivinación</td>
+    </tr>
+    <tr>
+      <td>Marchitar</td>
+      <td>4</td>
+      <td></td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Mastín fiel de Mordenkainen</td>
+      <td>4</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Muro de fuego</td>
+      <td>4</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Ojo arcano</td>
+      <td>4</td>
+      <td></td>
+      <td>Adivinación</td>
+    </tr>
+    <tr>
+      <td>Piel pétrea</td>
+      <td>4</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Polimorfar</td>
+      <td>4</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Puerta dimensional</td>
+      <td>4</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Sanctasanctórum privado de Mordenkainen</td>
+      <td>4</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Tentáculos negros de Evard</td>
+      <td>4</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Terreno alucinatorio</td>
+      <td>4</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Tormenta de hielo</td>
+      <td>4</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Transformar Piedra</td>
+      <td>4</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Esfera acuosa</td>
+      <td>4</td>
+      <td>Xanathar</td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Esfera de tormenta</td>
+      <td>4</td>
+      <td>Xanathar</td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Esfera vitriólica</td>
+      <td>4</td>
+      <td>Xanathar</td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Hechizar Monstruo</td>
+      <td>4</td>
+      <td>Xanathar</td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Invocar demonio mayor</td>
+      <td>4</td>
+      <td>Xanathar</td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Perdición elemental</td>
+      <td>4</td>
+      <td>Xanathar</td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Resplandor enfermizo</td>
+      <td>4</td>
+      <td>Xanathar</td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Invocar aberración</td>
+      <td>4</td>
+      <td>Tasha</td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Invocar constructo</td>
+      <td>4</td>
+      <td>Tasha</td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Invocar elemental</td>
+      <td>4</td>
+      <td>Tasha</td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Lanza psíquica de Raulothim</td>
+      <td>4</td>
+      <td>Fizban</td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Animar los objetos</td>
+      <td>5</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Círculo de teletransportación</td>
+      <td>5</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Conjurar elemental</td>
+      <td>5</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Cono de frío</td>
+      <td>5</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Conocer las leyendas</td>
+      <td>5</td>
+      <td></td>
+      <td>Adivinación</td>
+    </tr>
+    <tr>
+      <td>Contactar con otro plano</td>
+      <td>5</td>
+      <td></td>
+      <td>Adivinación</td>
+    </tr>
+    <tr>
+      <td>Creación</td>
+      <td>5</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Doble engañoso</td>
+      <td>5</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Dominar persona</td>
+      <td>5</td>
+      <td></td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Escudriñamiento</td>
+      <td>5</td>
+      <td></td>
+      <td>Adivinación</td>
+    </tr>
+    <tr>
+      <td>Mente en Blanco</td>
+      <td>5</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Nube incendiaria</td>
+      <td>5</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Palabra de Poder: Aturdir</td>
+      <td>5</td>
+      <td></td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Semiplano</td>
+      <td>5</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Telepatía</td>
+      <td>5</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Amanecer</td>
+      <td>5</td>
+      <td>Xanathar</td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Controlar vientos</td>
+      <td>5</td>
+      <td>Xanathar</td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Danza macabra</td>
+      <td>5</td>
+      <td>Xanathar</td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Empoderar habilidades</td>
+      <td>5</td>
+      <td>Xanathar</td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Enervación</td>
+      <td>5</td>
+      <td>Xanathar</td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Estática sináptica</td>
+      <td>5</td>
+      <td>Xanathar</td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Golpe de viento de acero</td>
+      <td>5</td>
+      <td>Xanathar</td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Inmolación</td>
+      <td>5</td>
+      <td>Xanathar</td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Inundación de energía negativa</td>
+      <td>5</td>
+      <td>Xanathar</td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Llamada infernal</td>
+      <td>5</td>
+      <td>Xanathar</td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Muro de luz</td>
+      <td>5</td>
+      <td>Xanathar</td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Paso lejano</td>
+      <td>5</td>
+      <td>Xanathar</td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Transmutar roca</td>
+      <td>5</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Invocar espíritu dracónico</td>
+      <td>5</td>
+      <td>Fizban</td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Cambiar de forma</td>
+      <td>6</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Cautiverio</td>
+      <td>6</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Deseo</td>
+      <td>6</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Detener el tiempo</td>
+      <td>6</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Muro prismático</td>
+      <td>6</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Némesis inexorable</td>
+      <td>6</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Palabra de Poder: matar</td>
+      <td>6</td>
+      <td></td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Polimorfismo verdadero</td>
+      <td>6</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Prisión mental</td>
+      <td>6</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Transformación de Tenser</td>
+      <td>6</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Invocar infernal</td>
+      <td>6</td>
+      <td>Tasha</td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Disfraz de otro mundo de Tasha</td>
+      <td>6</td>
+      <td>Tasha</td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Escudo de platino de Fizban</td>
+      <td>6</td>
+      <td>Fizban</td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Bola de fuego de explosión retardada</td>
+      <td>7</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Dedo de la muerte</td>
+      <td>7</td>
+      <td></td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Desplazamiento entre planos</td>
+      <td>7</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Espada de Mordenkainen</td>
+      <td>7</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Espejismo Arcano</td>
+      <td>7</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Etereidad</td>
+      <td>7</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Invertir gravedad</td>
+      <td>7</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Jaula de Fuerza</td>
+      <td>7</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Magnifica Mansión de Mordenkainen</td>
+      <td>7</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Proyectar Imagen</td>
+      <td>7</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Recluir</td>
+      <td>7</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Rociada prismática</td>
+      <td>7</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Símbolo</td>
+      <td>7</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Simulacro</td>
+      <td>7</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Teleportar</td>
+      <td>7</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Grito psíquico</td>
+      <td>8</td>
+      <td>Xanathar</td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Invulnerabilidad</td>
+      <td>8</td>
+      <td>Xanathar</td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Polimorfar en grupo</td>
+      <td>8</td>
+      <td>Xanathar</td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Antipatía/Simpatía</td>
+      <td>8</td>
+      <td></td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Campo Antimagia</td>
+      <td>8</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Clonar</td>
+      <td>8</td>
+      <td></td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Controlar el clima</td>
+      <td>8</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Debilidad mental</td>
+      <td>8</td>
+      <td></td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Dominar monstruo</td>
+      <td>8</td>
+      <td></td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Explosión solar</td>
+      <td>8</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Laberinto</td>
+      <td>8</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Muro de fuego</td>
+      <td>8</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Ojo arcano</td>
+      <td>8</td>
+      <td></td>
+      <td>Adivinación</td>
+    </tr>
+    <tr>
+      <td>Piel pétrea</td>
+      <td>8</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Polimorfismo verdadero</td>
+      <td>8</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Prisión mental</td>
+      <td>8</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Transformación de Tenser</td>
+      <td>8</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Invocar infernal</td>
+      <td>6</td>
+      <td>Tasha</td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Disfraz de otro mundo de Tasha</td>
+      <td>6</td>
+      <td>Tasha</td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Escudo de platino de Fizban</td>
+      <td>6</td>
+      <td>Fizban</td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Bola de fuego de explosión retardada</td>
+      <td>7</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Dedo de la muerte</td>
+      <td>7</td>
+      <td></td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Desplazamiento entre planos</td>
+      <td>7</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Espada de Mordenkainen</td>
+      <td>7</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Espejismo Arcano</td>
+      <td>7</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Etereidad</td>
+      <td>7</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Invertir gravedad</td>
+      <td>7</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Jaula de Fuerza</td>
+      <td>7</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Magnifica Mansión de Mordenkainen</td>
+      <td>7</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Proyectar Imagen</td>
+      <td>7</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Recluir</td>
+      <td>7</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Rociada prismática</td>
+      <td>7</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Símbolo</td>
+      <td>7</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Simulacro</td>
+      <td>7</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Teleportar</td>
+      <td>7</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Grito psíquico</td>
+      <td>8</td>
+      <td>Xanathar</td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Invulnerabilidad</td>
+      <td>8</td>
+      <td>Xanathar</td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Polimorfar en grupo</td>
+      <td>8</td>
+      <td>Xanathar</td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Antipatía/Simpatía</td>
+      <td>8</td>
+      <td></td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Campo Antimagia</td>
+      <td>8</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Clonar</td>
+      <td>8</td>
+      <td></td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Controlar el clima</td>
+      <td>8</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Debilidad mental</td>
+      <td>8</td>
+      <td></td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Dominar monstruo</td>
+      <td>8</td>
+      <td></td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Explosión solar</td>
+      <td>8</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Laberinto</td>
+      <td>8</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Muro de fuego</td>
+      <td>8</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Ojo arcano</td>
+      <td>8</td>
+      <td></td>
+      <td>Adivinación</td>
+    </tr>
+    <tr>
+      <td>Piel pétrea</td>
+      <td>8</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Polimorfismo verdadero</td>
+      <td>8</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Prisión mental</td>
+      <td>8</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Transformación de Tenser</td>
+      <td>8</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Invocar infernal</td>
+      <td>6</td>
+      <td>Tasha</td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Disfraz de otro mundo de Tasha</td>
+      <td>6</td>
+      <td>Tasha</td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Escudo de platino de Fizban</td>
+      <td>6</td>
+      <td>Fizban</td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Bola de fuego de explosión retardada</td>
+      <td>7</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Dedo de la muerte</td>
+      <td>7</td>
+      <td></td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Desplazamiento entre planos</td>
+      <td>7</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Espada de Mordenkainen</td>
+      <td>7</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Espejismo Arcano</td>
+      <td>7</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Etereidad</td>
+      <td>7</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Invertir gravedad</td>
+      <td>7</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Jaula de Fuerza</td>
+      <td>7</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Magnifica Mansión de Mordenkainen</td>
+      <td>7</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Proyectar Imagen</td>
+      <td>7</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Recluir</td>
+      <td>7</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Rociada prismática</td>
+      <td>7</td>
+      <td></td>
+      <td>Evocación</td>
+    </tr>
+    <tr>
+      <td>Símbolo</td>
+      <td>7</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Simulacro</td>
+      <td>7</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Teleportar</td>
+      <td>7</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Grito psíquico</td>
+      <td>8</td>
+      <td>Xanathar</td>
+      <td>Abjuracion</td>
+    </tr>
+    <tr>
+      <td>Cambiar de forma</td>
+      <td>9</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Cautiverio</td>
+      <td>9</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Deseo</td>
+      <td>9</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Detener el tiempo</td>
+      <td>9</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Muro prismático</td>
+      <td>9</td>
+      <td></td>
+      <td>Abjuración</td>
+    </tr>
+    <tr>
+      <td>Némesis inexorable</td>
+      <td>9</td>
+      <td></td>
+      <td>Ilusión</td>
+    </tr>
+    <tr>
+      <td>Palabra de poder: matar</td>
+      <td>9</td>
+      <td></td>
+      <td>Encantamiento</td>
+    </tr>
+    <tr>
+      <td>Polimorfismo verdadero</td>
+      <td>9</td>
+      <td></td>
+      <td>Transmutación</td>
+    </tr>
+    <tr>
+      <td>Presciencia</td>
+      <td>9</td>
+      <td></td>
+      <td>Adivinación</td>
+    </tr>
+    <tr>
+      <td>Proyección astral</td>
+      <td>9</td>
+      <td></td>
+      <td>Nigromancia</td>
+    </tr>
+    <tr>
+      <td>Tromba de meteoritos</td>
+      <td>9</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Umbral</td>
+      <td>9</td>
+      <td></td>
+      <td>Conjuración</td>
+    </tr>
+    <tr>
+      <td>Hoja del Caos</td>
+      <td>9</td>
+      <td>Tasha</td>
+      <td>Conjuración</td>
+    </tr>
+    /tbody>
+</table>
+
+
+     
+
+
+      <br>
+<div style="text-align: center;">
+  <button class="button button-back" onclick="goBack()">Volver Atrás</button>
+</div>
+    <script> function goBack() {
+window.history.back();
+}</script>
+      
+              
+                      </body>
+</html>
