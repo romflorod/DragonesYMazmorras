@@ -2,23 +2,17 @@
 <html>
 <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DLSKPC14L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-3DLSKPC14L');
-</script>
-  <title>Ayuda/Guia online de Dragones y Mazmorras</title>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3DLSKPC14L');
+  </script>
+  <title>Ayuda/Guía online de Dragones y Mazmorras</title>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-
-  <meta name="description" content="Tablero de Dragones y Mazmorras: Generador de tableros, herramientas de dados y tienda de objetos para el juego de rol Dragones y Mazmorras. Sumérgete en un mundo medieval de fantasía.">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
   <style>
-    @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css";
-    @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
-
-     
     body {
       background-color: #1c1c1c;
       color: #ffffff;
@@ -27,9 +21,15 @@
       padding: 0;
     }
 
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
     h1 {
       font-size: 40px;
-      margin: 40px;
+      margin: 40px 0;
       text-align: center;
       font-family: "Nodesto", serif;
       color: #ff4d6d;
@@ -38,17 +38,11 @@
       line-height: 1.2;
     }
 
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
     .button-container {
-      margin-top: 20px;
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
     }
 
     .button {
@@ -104,9 +98,10 @@
     h3 a:hover {
       color: #d27963;
     }
+
     h4 {
       font-size: 45px;
-      margin: 40px;
+      margin: 40px 0;
       text-align: center;
       font-family: "Nodesto", serif;
       color: #922880;
@@ -142,7 +137,8 @@
       object-fit: cover;
     }
 
-    .prev, .next {
+    .prev,
+    .next {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -155,7 +151,8 @@
       transition: background-color 0.3s;
     }
 
-    .prev:hover, .next:hover {
+    .prev:hover,
+    .next:hover {
       background-color: rgba(0, 0, 0, 0.8);
     }
 
@@ -186,14 +183,14 @@
       <button onclick="redirectToBoard('caravan.html')" class="button">Caravana</button>
       <button onclick="redirectToBoard('fortress.html')" class="button">Fortín Derruido</button>
     </div>
-    <br>
+
     <div>
       <h2>¿Cómo funciona el generador de tableros?</h2>
       <p>Selecciona el mapa en el que quieres jugar.</p>
       <p>Añade usuarios haciendo clic en la celda (haz clic nuevamente para borrarlos).</p>
       <p>Añade monstruos haciendo clic en la celda (haz clic nuevamente para borrarlos).</p>
     </div>
-    <br>
+
     <div>
       <h1>Herramientas de Dados</h1>
       <h2>¿Cómo funciona el generador de dados?</h2>
@@ -202,7 +199,7 @@
         <a href="https://romflorod.github.io/DragonesYMazmorras/dices/challenge.html" target="_blank" class="button">Dados</a>
       </div>
     </div>
-    <br>
+
     <div>
       <h1>Tienda de todos los objetos de D&D 5e</h1>
       <h2>¿Cómo funciona la tienda?</h2>
@@ -211,53 +208,53 @@
         <a href="https://romflorod.github.io/DragonesYMazmorras/shops/" target="_blank" class="button">Tienda</a>
       </div>
     </div>
+
     <div>
       <h1>Magia en D&D 5e</h1>
       <h2>¿Cómo funciona la guía?</h2>
-      <p>Breve explicación y hechizos por clase </p>
+      <p>Breve explicación y hechizos por clase</p>
       <div class="button-container">
         <a href="https://romflorod.github.io/DragonesYMazmorras/spells/" target="_blank" class="button">Magia</a>
       </div>
     </div>
-    <br>
+
     <div>
-      <h2>¿Quieres colaborar con mapas o nuevas funcionalidades?</h3>
+      <h2>¿Quieres colaborar con mapas o nuevas funcionalidades?</h2>
       <a href="https://romflorod.github.io" target="_blank">romflorod.github.io</a>
+    </div>
+
+    <div class="slideshow-container">
+      <div class="slide active">
+        <img src="img/scroll1.png" alt="Scroll 1">
       </div>
-      <br>
-      <div class="slideshow-container">
-        <div class="slide active">
-          <img src="img/scroll1.png" alt="Scroll 1">
-        </div>
-        <div class="slide">
-          <img src="img/scroll2.png" alt="Scroll 2">
-        </div>
-        <div class="slide">
-          <img src="img/scroll3.png" alt="Scroll 3">
-        </div>
-        <div class="slide">
-          <img src="img/scroll4.png" alt="Scroll 4">
-        </div>
-        <div class="slide">
-          <img src="img/scroll5.png" alt="Scroll 5">
-        </div>
-        <div class="slide">
-          <img src="img/scroll6.png" alt="Scroll 6">
-        </div>
-    
-        <div class="prev" onclick="previousSlide()">&#10094;</div>
-        <div class="next" onclick="nextSlide()">&#10095;</div>
+      <div class="slide">
+        <img src="img/scroll2.png" alt="Scroll 2">
       </div>
+      <div class="slide">
+        <img src="img/scroll3.png" alt="Scroll 3">
+      </div>
+      <div class="slide">
+        <img src="img/scroll4.png" alt="Scroll 4">
+      </div>
+      <div class="slide">
+        <img src="img/scroll5.png" alt="Scroll 5">
+      </div>
+      <div class="slide">
+        <img src="img/scroll6.png" alt="Scroll 6">
+      </div>
+
+      <div class="prev" onclick="previousSlide()">&#10094;</div>
+      <div class="next" onclick="nextSlide()">&#10095;</div>
+    </div>
 
     <script>
       function redirectToBoard(path) {
         window.location.href = path;
       }
-    </script>
-    <script>
+
       const slides = document.querySelectorAll('.slide');
       let currentSlide = 0;
-  
+
       function showSlide(slideIndex) {
         slides.forEach((slide, index) => {
           if (index === slideIndex) {
@@ -268,19 +265,19 @@
         });
         currentSlide = slideIndex;
       }
-  
+
       function nextSlide() {
         currentSlide = (currentSlide + 1) % slides.length;
         showSlide(currentSlide);
       }
-  
+
       function previousSlide() {
         currentSlide = (currentSlide - 1 + slides.length) % slides.length;
         showSlide(currentSlide);
       }
-  
+
       setInterval(nextSlide, 3000); // Change slide every 3 seconds
-  
+
       document.addEventListener('keydown', (event) => {
         if (event.key === 'ArrowRight') {
           nextSlide();
@@ -289,7 +286,6 @@
         }
       });
     </script>
-    
   </div>
 </body>
 </html>

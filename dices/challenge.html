@@ -68,30 +68,83 @@
       color: #0000FF;
       font-weight: bold;
     }
+
+    .button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-family: 'Arial', sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: #8b281c;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #d27963;
+    }
+
+    .button-back {
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .button-back:hover {
+      background-color: #777777;
+    }
+
+    /* Vibrating Animation */
+    @keyframes vibrating {
+      0% {
+        transform: rotate(0);
+      }
+      25% {
+        transform: rotate(-5deg);
+      }
+      50% {
+        transform: rotate(0);
+      }
+      75% {
+        transform: rotate(5deg);
+      }
+      100% {
+        transform: rotate(0);
+      }
+    }
+
+    .vibrating {
+      animation: vibrating 0.5s linear;
+    }
   </style>
 </head>
 <body>
   <h1>Elige tu dado</h1>
   <div class="dice-container">
-    <img class="dice" src="d4.png" alt="D4" onclick="rollDice(4)">
-    <img class="dice" src="d6.png" alt="D6" onclick="rollDice(6)">
-    <img class="dice" src="d8.png" alt="D8" onclick="rollDice(8)">
-    <img class="dice" src="d10.png" alt="D10" onclick="rollDice(10)">
-    <img class="dice" src="d12.png" alt="D12" onclick="rollDice(12)">
-    <img class="dice" src="d20.png" alt="D20" onclick="rollDice(20)">
+    <img class="dice" src="d4.png" alt="D4" onclick="rollDice(4, this)">
+    <img class="dice" src="d6.png" alt="D6" onclick="rollDice(6, this)">
+    <img class="dice" src="d8.png" alt="D8" onclick="rollDice(8, this)">
+    <img class="dice" src="d10.png" alt="D10" onclick="rollDice(10, this)">
+    <img class="dice" src="d12.png" alt="D12" onclick="rollDice(12, this)">
+    <img class="dice" src="d20.png" alt="D20" onclick="rollDice(20, this)">
   </div>
 
   <div class="result-container">
     <h2>Resultado</h2>
     <div id="result" class="result"></div>
   </div>
-  <br>
+
   <button class="button button-back" onclick="goBack()">Volver Atrás</button>
-  <script> function goBack() {
-    window.history.back();
-  }</script>
+
   <script>
-    function rollDice(caras) {
+    function goBack() {
+      window.location.href = "https://romflorod.github.io/DragonesYMazmorras";
+    }
+
+    function rollDice(caras, diceElement) {
       var resultado = Math.floor(Math.random() * caras) + 1;
       var resultContainer = document.getElementById("result");
       resultContainer.innerHTML = resultado;
@@ -105,6 +158,11 @@
       } else {
         resultContainer.classList.remove("critica", "pifia");
       }
+
+      diceElement.classList.add("vibrating");
+      setTimeout(function() {
+        diceElement.classList.remove("vibrating");
+      }, 500);
     }
   </script>
 </body>

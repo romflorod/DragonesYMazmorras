@@ -6,44 +6,6 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
-    .button-container {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .button {
-      margin: 5px;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      font-family: 'Arial', sans-serif;
-      font-size: 14px;
-      cursor: pointer;
-      background-color: #8b281c;
-      color: #fff;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #d27963;
-    }
-
-    .button-reset {
-      background-color: #8e8e8e;
-      color: #fff;
-    }
-
-    .button-back {
-      display: block;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .button-back:hover {
-      background-color: #777777;
-    }
     body {
       background-color: #000;
       color: #fff;
@@ -72,6 +34,7 @@
     .explanation-text {
       font-size: 16px;
       margin-top: 10px;
+      line-height: 1.5;
     }
 
     .store-container {
@@ -134,6 +97,16 @@
     .exchange-item {
       margin-bottom: 5px;
     }
+
+    .button-back {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .button-back:hover {
+      background-color: #777777;
+    }
   </style>
 </head>
 <body>
@@ -166,13 +139,15 @@
       </ul>
     </div>
   </div>
+
   <div class="button-container">
+    <button class="button button-back" onclick="goBack()">Volver Atrás</button>
+  </div>
 
-  <button class="button button-back" onclick="goBack()">Volver Atrás</button>
-  <script> function goBack() {
-    window.history.back();
-  }</script>
-</div>
-
+  <script>
+    function goBack() {
+      window.location.href = "https://romflorod.github.io/DragonesYMazmorras";
+    }
+  </script>
 </body>
 </html>
