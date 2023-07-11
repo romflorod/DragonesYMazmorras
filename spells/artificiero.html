@@ -69,30 +69,31 @@
       padding: 10px;
       text-align: center;
     }
-    .button-container {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .button {
-      display: inline-block;
-      background-color: #ff0000;
-      color: #ffffff;
-      font-size: 18px;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .button:hover {
-      background-color: #cc0000;
-    }
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+.button {
+  display: inline-block;
+  background-color: #ff0000;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #cc0000;
+}
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Escuela de Artificieros</h1>
     <h2>¡Bienvenido a la página de hechizos de la Escuela de Artificieros!</h2>
-    <img src="img/artificero.png " alt="Libro de hechizos" style="display: block; margin: 0 auto; max-width: 400px; height: auto;">
+    <img src="img/arti.png " alt="Libro de hechizos" style="display: block; margin: 0 auto; max-width: 400px; height: auto;">
     <br>
     <h2> Aquí encontrarás una lista de hechizos clasificados por nivel, rama y escuela. Explora los diversos hechizos y descubre su magia.</h2>
     <table class="dnd-table">
@@ -667,13 +668,15 @@
           <td>Xanathar</td>
         </tr>
       </tbody>
-    </table>
+    </table> 
     
-    
-      
-    <div class="button-container">
-      <a href="artificieroDetalles.html" class="button">Ver detalles</a>
-    </div>
-  </div>
+    <br>
+    <div style="text-align: center;">
+        <button class="button button-back" onclick="goBack()">Volver Atrás</button>
+      </div>
+          <script> function goBack() {
+      window.history.back();
+    }</script>
+   
 </body>
 </html>
