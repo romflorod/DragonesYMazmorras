@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cuadro de Diálogo de Dragones y Mazmorras</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1f1f1f;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .dialog-box {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 300px;
+      background-color: #3a3a3a;
+      border: 2px solid #5f5f5f;
+      border-radius: 5px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .user-message {
+      color: #ff9800;
+    }
+
+    .gpt3-message {
+      color: #03a9f4;
+    }
+
+    .message {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="dialog-box" id="dialog-box">
+    <div class="message">¡Bienvenido a Dragones y Mazmorras! ¿En qué puedo ayudarte?</div>
+    <input type="text" id="user-input" placeholder="Escribe tu mensaje..." autofocus>
+  </div>
+
+  <script>
+    document.getElementById('user-input').addEventListener('keypress', function (event) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        const userInput = event.target.value;
+        const dialogBox = document.getElementById('dialog-box');
+
+        // Mostramos el mensaje del usuario en el cuadro de diálogo
+        const userMessageDiv = document.createElement('div');
+        userMessageDiv.className = 'message user-message';
+        userMessageDiv.textContent = 'Usuario: ' + userInput;
+        dialogBox.appendChild(userMessageDiv);
+
+        // Hacemos la solicitud a la API de GPT-3 para obtener la respuesta
+        fetch('https://api.openai.com/v1/engines/davinci-codex/completions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer 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'
+          },
+          body: JSON.stringify({
+            prompt: userInput,
+            max_tokens: 100
+          })
+        })
+        .then(response => response.json())
+        .then(data => {
+          const gpt3Response = data.choices[0].text;
+
+          // Mostramos la respuesta de GPT-3 en el cuadro de diálogo
+          const gpt3MessageDiv = document.createElement('div');
+          gpt3MessageDiv.className = 'message gpt3-message';
+          gpt3MessageDiv.textContent = 'GPT-3: ' + gpt3Response;
+          dialogBox.appendChild(gpt3MessageDiv);
+
+          // Limpiamos el campo de entrada de texto para el próximo mensaje
+          event.target.value = '';
+        })
+        .catch(error => {
+          console.error('Error al obtener la respuesta de GPT-3:', error);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
